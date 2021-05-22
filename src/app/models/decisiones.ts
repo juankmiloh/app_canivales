@@ -1,8 +1,8 @@
 export const modelDecisiones = {
     decision1: {
         titulo: 'Decisión 1',
-        imagen: '/assets/carcel1.jpg',
-        descripcion: 'Los personajes se encuentran encarcelados, ¿Desea abrir la puerta?',
+        imagen: '/assets/prisioneros.png',
+        descripcion: 'Los personajes se encuentran prisioneros, ¿Desea abrir la puerta?',
         opciones: [
             {
                 opcion: 'Si'
@@ -51,7 +51,7 @@ export const modelDecisiones = {
         decision: 'decisionBuena'
     },
     decisionBuena: {
-        titulo: 'Sobreviviste, Felicitaciones!!!',
+        titulo: 'Felicitaciones, sobreviviste!!!',
         imagen: '/assets/ganador.jpg',
         opciones: [
             {

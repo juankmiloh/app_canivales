@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { modelEstudiantes } from 'src/app/models/estudiantes';
 
 @Component({
   selector: 'app-nosotros',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosComponent implements OnInit {
 
+  estudiantes: any[];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.estudiantes = modelEstudiantes;
+    console.log(this.estudiantes);
   }
 
 }

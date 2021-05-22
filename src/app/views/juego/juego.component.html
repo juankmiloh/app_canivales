@@ -1,8 +1,8 @@
 <h2 mat-dialog-title>{{ decisiones[decisionSelect].titulo }}</h2>
-<mat-dialog-content>
+<mat-dialog-content style="border: 0px solid red;">
     <br>
     <mat-card class="example-card">
-        <img mat-card-image [src]="decisiones[decisionSelect].imagen" height="350">
+        <img mat-card-image [src]="decisiones[decisionSelect].imagen">
         <mat-card-content *ngIf="decisiones[decisionSelect].descripcion">
             <p style="text-align: center;">
                 {{ decisiones[decisionSelect].descripcion }}
@@ -10,7 +10,8 @@
         </mat-card-content>
         <mat-divider></mat-divider>
         <mat-card-actions align="center">
-            <button mat-button *ngFor="let item of decisiones[decisionSelect].opciones;" (click)="validarOpcion(item.opcion)">{{ item.opcion }}</button>
+            <button mat-button *ngFor="let item of decisiones[decisionSelect].opciones;"
+                (click)="validarOpcion(item.opcion)">{{ item.opcion }}</button>
         </mat-card-actions>
     </mat-card>
     <br>

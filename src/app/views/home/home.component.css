@@ -3,22 +3,27 @@
     background-size: cover;
 }
 
+.content {
+    /* width: 110%; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    position: fixed !important;
+    overflow: auto;
+}
+
 /* Pantallas superiores a 800px (PC) */
 @media screen and (min-width: 800px) {
     .content {
         background-image: url('/assets/selva.jpg');
-        height: auto;
-        position: fixed !important;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
     }
-    
+
     .card-menu {
         padding: 6.3% 6% 0% 13%;
     }
-    
+
     .card-personajes {
         padding: 4% 10% 0% 0%;
     }
@@ -35,11 +40,11 @@
     }
 
     .card-menu {
-        padding: 3% 3% 0% 6%;
+        padding: 3% 6% 0% 6%;
     }
-    
+
     .card-personajes {
-        padding: 4% 3% 3% 6%;
+        padding: 4% 6% 3% 6%;
     }
 
     .img-personajes {

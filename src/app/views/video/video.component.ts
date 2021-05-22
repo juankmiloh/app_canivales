@@ -9,46 +9,24 @@ import { JuegoComponent } from '../juego/juego.component';
 })
 export class VideoComponent implements OnInit {
 
+  x: MediaQueryList;
+
   constructor(
     public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
-    // this.openDialog();
+    this.x = window.matchMedia('(max-width: 800px)');
   }
 
   // mostrar modal de opciones
   openDialog(): void {
     const dialogRef = this.dialog.open(JuegoComponent, {
-      // height: '35em',
-      width: '40%',
+      maxWidth: this.x.matches ? '90%' : '40%',
+      // height: this.x.matches ? '' : '',
       disableClose: true,
-      data:
-        {
-          // view: this.view,
-          // fabOptions: this.fabOptions,
-          // optionsMap: this.options,
-          // suiAnios: this.suiAnios,
-          // suiCausas: this.suiCausas,
-          // suiEmpresas: this.suiEmpresas,
-          // updateLayerCSV: this.updateLayerCSV,
-          // dataCSV: this.dataCSV,
-        },
+      data: {},
     });
-    // subscribe to observable que se ejecuta despues de cerrar el modal, obtiene los valores del hijo
-    // dialogRef.afterClosed().subscribe((dataFromModal: IOptionsMapa) => {
-    //   // console.log('The dialog was closed', dataFromModal);
-    //   if (dataFromModal !== undefined) {
-    //     this.updateLayerCSV = true;
-    //     this.addLayer(dataFromModal).then((data) => {
-    //       this.view.map.layers = data; // Se agrega un nuevo layer CSV al mapa
-    //     });
-    //   }
-    // });
-    // // subscribe to observable que se ejecuta cuando se da click al backdrop del modal
-    // dialogRef.backdropClick().subscribe((data) => {
-    //   // console.log('CLICK BACKDROP!', data);
-    // });
   }
 
 }

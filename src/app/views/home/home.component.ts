@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { MatDialog } from '@angular/material/dialog';
+import { NosotrosComponent } from '../nosotros/nosotros.component';
 import { VideoComponent } from '../video/video.component';
 
 @Component({
@@ -9,21 +11,33 @@ import { VideoComponent } from '../video/video.component';
 })
 export class HomeComponent implements OnInit {
 
+  x: any;
+  bottomSheetRef: any; // modal acerca de
+
   constructor(
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private bottomSheet: MatBottomSheet
   ) { }
 
   ngOnInit(): void {
-    // this.openDialog();
+    this.x = window.matchMedia('(max-width: 800px)'); // Si hace match con dispositivos móviles
   }
 
   // mostrar modal de video
   openDialog(): void {
     const dialogRef = this.dialog.open(VideoComponent, {
-      // height: '35em',
-      width: '100%',
+      closeOnNavigation: false,
+      maxWidth: this.x.matches ? '90%' : '60%',
+      // height: this.x.matches ? '100%' : '',
       disableClose: true,
       data: {},
+    });
+  }
+
+  // Mostrar modal de acerca de
+  openBottomSheet(): void {
+    this.bottomSheetRef = this.bottomSheet.open(NosotrosComponent, {
+      data: {} // Se pasan valores al modal
     });
   }
 

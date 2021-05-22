@@ -1,0 +1,8 @@
+.example-card {
+    margin-bottom: 3%;
+}
+
+.example-header-image {
+    background-image: url('/assets/user.png');
+    background-size: cover;
+}

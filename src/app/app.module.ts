@@ -13,6 +13,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 
 import { NosotrosComponent } from './views/nosotros/nosotros.component';
 import { HomeComponent } from './views/home/home.component';
@@ -42,7 +43,8 @@ import { VideoComponent } from './views/video/video.component';
     MatDividerModule,
     MatGridListModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatBottomSheetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

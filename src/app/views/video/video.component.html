@@ -1,8 +1,57 @@
 <h2 mat-dialog-title>¡Sálvese quien pueda!</h2>
 <mat-dialog-content>
-    <video src="/assets/video.mp4" width="100%" height="480" controls autoplay loop>
-        Su navegador no soporta contenido multimedia.
-    </video>
+    <div class="row">
+        <div class="col-sm-12 col-md-12" style="border: 0px solid red;">
+            <video src="/assets/video.mp4" width="100%" [height]="x.matches ? '200' : '350'" controls autoplay loop>
+                Su navegador no soporta contenido multimedia.
+            </video>
+        </div>
+        <div class="col-sm-12 col-md-12" style="border: 0px solid red;">
+            <hr>
+            <p style="text-align: justify;">
+                En una travesía organizada por la Universidad Distrital, un grupo de
+                adolescentes, deciden irse de
+                excusión al Amazonas con el objetivo de encontrar un diamante escondido en la selva. Para lo cual la
+                necesidad de un guía turístico era primordial ya que sin él la búsqueda será más difícil. Se emprende
+                una caminata a la selva, ya en el segundo día los jóvenes son sorprendidos por una tribu de caníbales,
+                quienes los encierran y como primer bocado el guía es el elegido, con el guía los caníbales tienen para
+                una semana.
+                La próxima semana elegirán el siguiente, en donde el grupo de jóvenes deberán decidir quién será el
+                próximo, y el orden en el que se los comerán.
+            </p>
+
+            <h3><b>Roles</b></h3>
+
+            <ul>
+                <li type="disc">Mujer muy bella físicamente, que sabe de medicina, pero tiene dificultad de visión.</li>
+                <li type="disc">Hombre fuerte que sabe de supervivencia, pero esta obeso.</li>
+                <li type="disc">Hombre que conoce la zona, pero sufre de alzhéimer cada dos horas.</li>
+                <li type="disc">Hombre que conoce el idioma de la tribu, pero no puede correr.</li>
+            </ul>
+
+            <h3><b>Herramientas que tiene a la mano</b></h3>
+
+            <ol>
+                <li value="1">Dos (2) linternas.</li>
+                <li>Una (1) cuchara.</li>
+                <li>Un (1) paquete de Quipitos.</li>
+            </ol>
+
+            <mat-divider></mat-divider>
+
+            <br>
+
+            <p style="text-align: center;">
+                <b>¿Qué estrategia utilizará para salvarse y escapar de la tribu de caníbales?...</b>
+            </p>
+
+            <br>
+
+            <mat-divider></mat-divider>
+
+            <br>
+        </div>
+    </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
     <button mat-button [mat-dialog-close]="true" (click)="openDialog()">Continuar</button>
