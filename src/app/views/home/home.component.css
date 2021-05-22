@@ -1,0 +1,48 @@
+.example-header-image {
+    background-image: url('/assets/user.png');
+    background-size: cover;
+}
+
+/* Pantallas superiores a 800px (PC) */
+@media screen and (min-width: 800px) {
+    .content {
+        background-image: url('/assets/selva.jpg');
+        height: auto;
+        position: fixed !important;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .card-menu {
+        padding: 6.3% 6% 0% 13%;
+    }
+    
+    .card-personajes {
+        padding: 4% 10% 0% 0%;
+    }
+
+    .img-personajes {
+        width: 100%;
+    }
+}
+
+/* Pantallas inferiores a 800px (mobile) */
+@media screen and (max-width: 800px) {
+    .content {
+        background-image: url('/assets/selva.jpg');
+    }
+
+    .card-menu {
+        padding: 3% 3% 0% 6%;
+    }
+    
+    .card-personajes {
+        padding: 4% 3% 3% 6%;
+    }
+
+    .img-personajes {
+        width: 100%;
+    }
+}

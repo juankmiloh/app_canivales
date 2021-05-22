@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{ decisiones[decisionSelect].titulo }}</h2>
+<mat-dialog-content>
+    <br>
+    <mat-card class="example-card">
+        <img mat-card-image [src]="decisiones[decisionSelect].imagen" height="350">
+        <mat-card-content *ngIf="decisiones[decisionSelect].descripcion">
+            <p style="text-align: center;">
+                {{ decisiones[decisionSelect].descripcion }}
+            </p>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions align="center">
+            <button mat-button *ngFor="let item of decisiones[decisionSelect].opciones;" (click)="validarOpcion(item.opcion)">{{ item.opcion }}</button>
+        </mat-card-actions>
+    </mat-card>
+    <br>
+</mat-dialog-content>

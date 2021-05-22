@@ -1,0 +1,50 @@
+<div class="row content">
+    <div class="col-sm-12 col-md-6 card-menu" style="border: 0px solid red;">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Juan Camilo Herrera</mat-card-title>
+                <mat-card-subtitle>Jugador</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="/assets/canibal.jpg" alt="Photo">
+            <mat-card-content>
+                <mat-nav-list>
+                    <mat-divider></mat-divider>
+                    <a mat-list-item (click)="openDialog()">
+                        <mat-icon aria-label="Side nav toggle icon">arrow_right</mat-icon>
+                        <span style="padding-left: 3%;">Iniciar</span>
+                    </a>
+                    <!-- <mat-divider></mat-divider> -->
+                    <a mat-list-item href="/score">
+                        <mat-icon aria-label="Side nav toggle icon">history</mat-icon>
+                        <span style="padding-left: 3%;">Scores</span>
+                    </a>
+                    <!-- <mat-divider></mat-divider> -->
+                    <!-- <a mat-list-item href="/home">
+                            <mat-icon aria-label="Side nav toggle icon">person_pin</mat-icon>
+                            <span style="padding-left: 3%;">Personajes</span>
+                        </a> -->
+                    <!-- <mat-divider></mat-divider> -->
+                    <a mat-list-item href="/usuarios">
+                        <mat-icon aria-label="Side nav toggle icon">person_add_alt_1</mat-icon>
+                        <span style="padding-left: 3%;">Registrarse</span>
+                    </a>
+                    <!-- <mat-divider></mat-divider> -->
+                    <a mat-list-item href="/nosotros">
+                        <mat-icon aria-label="Side nav toggle icon">info</mat-icon>
+                        <span style="padding-left: 3%;">Acerca de</span>
+                    </a>
+                    <mat-divider></mat-divider>
+                </mat-nav-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="col-sm-12 col-md-6 card-personajes" style="border: 0px solid yellow;">
+        <mat-card>
+            <img class="img-personajes" src="/assets/personajes.jpg" alt="Photo">
+            <mat-card-content>
+                <b>Personajes</b>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
