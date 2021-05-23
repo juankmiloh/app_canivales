@@ -1,1 +1,19 @@
-<p>usuarios works!</p>
+<mat-dialog-content>
+    <form [formGroup]="model" (ngSubmit)="logForm()">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 card-menu"
+                style="border: 0px solid red; text-align: center; padding-top: 5%; padding-bottom: 5%;">
+                <mat-form-field appearance="outline">
+                    <mat-label>Bienvenido</mat-label>
+                    <input matInput formControlName="user" placeholder="Ingresa tu nombre">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint class="text-danger" *ngIf="model.controls.user.invalid && model.controls.user.touched">*Campo obligatorio</mat-hint>
+                </mat-form-field>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="col-sm-12 col-md-12 card-menu" style="border: 0px solid red; text-align: center;">
+                <button mat-button color="primary" type="submit" [disabled]="!model.valid">Aceptar</button>
+            </div>
+        </div>
+    </form>
+</mat-dialog-content>

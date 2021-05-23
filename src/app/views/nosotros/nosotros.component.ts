@@ -14,7 +14,6 @@ export class NosotrosComponent implements OnInit {
 
   ngOnInit(): void {
     this.estudiantes = modelEstudiantes;
-    console.log(this.estudiantes);
   }
 
 }

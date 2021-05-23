@@ -12,7 +12,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Si',
-        decision: 'decision2'
+        decision: 'decision2',
+        progreso: 30
     },
     decision2: {
         titulo: 'Decisión 2',
@@ -30,7 +31,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Cuchara',
-        decision: 'decision3'
+        decision: 'decision3',
+        progreso: 60
     },
     decision3: {
         titulo: 'Decisión 3',
@@ -38,7 +40,7 @@ export const modelDecisiones = {
         descripcion: 'Los personajes están libres, por tanto se acercan al cadaver del guía y deciden...',
         opciones: [
             {
-                opcion: 'Comerce al guía'
+                opcion: 'Comerselo'
             },
             {
                 opcion: 'Pelear con los canívales'
@@ -48,17 +50,19 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Rociarle quipitos',
-        decision: 'decisionBuena'
+        decision: 'decisionBuena',
+        progreso: 80
     },
     decisionBuena: {
         titulo: 'Felicitaciones, sobreviviste!!!',
         imagen: '/assets/ganador.jpg',
         opciones: [
             {
-                opcion: 'Salir'
+                opcion: 'Guardar'
             }
         ],
-        respuesta: 'Salir'
+        respuesta: 'Guardar',
+        progreso: 100
     },
     decisionMuerte: {
         titulo: 'Mala decisión',

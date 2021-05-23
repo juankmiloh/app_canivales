@@ -1,4 +1,11 @@
-<h2 mat-dialog-title>{{ decisiones[decisionSelect].titulo }}</h2>
+<div class="row">
+    <div class="col-7" style="border: 0px solid blue;">
+        <h3 mat-dialog-title><b>{{ decisiones[decisionSelect].titulo }}</b></h3>
+    </div>
+    <div class="col-5" style="border: 0px solid red; text-align: right;">
+        <h3 mat-dialog-title><span *ngIf="horas < 10">0</span>{{horas}} : <span *ngIf="minutos < 10">0</span>{{minutos}} : <span *ngIf="segundos < 10">0</span>{{segundos}}</h3>
+    </div>
+</div>
 <mat-dialog-content style="border: 0px solid red;">
     <br>
     <mat-card class="example-card">
@@ -15,4 +22,5 @@
         </mat-card-actions>
     </mat-card>
     <br>
+    <mat-progress-bar mode="determinate" [value]="decisiones[decisionSelect].progreso"></mat-progress-bar>
 </mat-dialog-content>

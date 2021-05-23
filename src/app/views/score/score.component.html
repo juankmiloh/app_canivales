@@ -1,1 +1,10 @@
-<p>score works!</p>
+<mat-list>
+    <div mat-subheader>Scores</div>
+    <mat-divider></mat-divider>
+    <mat-list-item *ngFor="let score of scores">
+        <mat-divider></mat-divider>
+        <mat-icon mat-list-icon>timer</mat-icon>
+        <div mat-line>{{score.user}}</div>
+        <div mat-line>Tiempo. <span *ngIf="score.horas < 10">0</span>{{ score.horas }} : <span *ngIf="score.minutos < 10">0</span>{{ score.minutos }} : <span *ngIf="score.segundos < 10">0</span>{{ score.segundos }} </div>
+    </mat-list-item>
+</mat-list>

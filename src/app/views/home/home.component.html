@@ -3,8 +3,9 @@
         <mat-card>
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>Juan Camilo Herrera</mat-card-title>
-                <mat-card-subtitle>Jugador</mat-card-subtitle>
+                <mat-card-title>{{ jugador }}</mat-card-title>
+                <mat-card-subtitle *ngIf="jugador === 'Invitado'">Dale a Iniciar</mat-card-subtitle>
+                <mat-card-subtitle *ngIf="jugador !== 'Invitado'">Jugador</mat-card-subtitle>
             </mat-card-header>
             <img mat-card-image src="/assets/canibal.jpg" alt="Photo">
             <mat-card-content>
@@ -12,24 +13,25 @@
                     <mat-divider></mat-divider>
                     <a mat-list-item (click)="openDialog()">
                         <mat-icon aria-label="Side nav toggle icon">arrow_right</mat-icon>
-                        <span style="padding-left: 3%;">Iniciar</span>
+                        <span style="padding-left: 3%;" *ngIf="jugador === 'Invitado'">Iniciar</span>
+                        <span style="padding-left: 3%;" *ngIf="jugador !== 'Invitado'">Jugar</span>
                     </a>
-                    <!-- <mat-divider></mat-divider> -->
-                    <a mat-list-item href="/score">
+                    <a mat-list-item (click)="openBottomSheetScores()">
                         <mat-icon aria-label="Side nav toggle icon">history</mat-icon>
                         <span style="padding-left: 3%;">Scores</span>
                     </a>
-                    <!-- <mat-divider></mat-divider> -->
                     <!-- <a mat-list-item href="/home">
                             <mat-icon aria-label="Side nav toggle icon">person_pin</mat-icon>
                             <span style="padding-left: 3%;">Personajes</span>
                         </a> -->
-                    <!-- <mat-divider></mat-divider> -->
-                    <a mat-list-item href="/usuarios">
+                    <!-- <a mat-list-item href="/usuarios">
                         <mat-icon aria-label="Side nav toggle icon">person_add_alt_1</mat-icon>
                         <span style="padding-left: 3%;">Registrarse</span>
+                    </a> -->
+                    <a mat-list-item (click)="salir()" *ngIf="jugador !== 'Invitado'">
+                        <mat-icon aria-label="Side nav toggle icon">highlight_off</mat-icon>
+                        <span style="padding-left: 3%;">Cerrar sesión</span>
                     </a>
-                    <!-- <mat-divider></mat-divider> -->
                     <a mat-list-item (click)="openBottomSheet()">
                         <mat-icon aria-label="Side nav toggle icon">info</mat-icon>
                         <span style="padding-left: 3%;">Acerca de</span>
