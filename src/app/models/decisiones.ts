@@ -50,22 +50,6 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Rociarle quipitos',
-        decision: 'decision4',
-        progreso: 70
-    },
-    decision4: {
-        titulo: 'Decisión 4',
-        imagen: '/assets/',
-        descripcion: 'otra decision',
-        opciones: [
-            {
-                opcion: 'Comerselo'
-            },
-            {
-                opcion: 'Pelear con los canívales'
-            }
-        ],
-        respuesta: 'Comerselo',
         decision: 'decisionBuena',
         progreso: 80
     },
