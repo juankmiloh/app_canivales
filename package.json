@@ -13,7 +13,7 @@
     "build:ssr": "ng build --prod && ng run appcanivales:server:production",
     "prerender": "ng run appcanivales:prerender",
     "build:client-and-server-bundles": "ng build --prod && ng run appcanivales:server:production --bundleDependencies all",
-    "start:heroku": "npm start",
+    "start:heroku": "node dist/appcanivales/server/main.js",
     "postinstall": "npm run build:ssr"
   },
   "private": true,
