@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/appcanivales",
+            "outputPath": "dist/appcanivales/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -119,9 +119,59 @@
               "devServerTarget": "appcanivales:serve:production"
             }
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/appcanivales/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "sourceMap": false,
+              "optimization": true
+            }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "appcanivales:build",
+            "serverTarget": "appcanivales:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "appcanivales:build:production",
+              "serverTarget": "appcanivales:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "appcanivales:build:production",
+            "serverTarget": "appcanivales:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
+          }
         }
       }
     }
   },
-  "defaultProject": "appcanivales"
+  "defaultProject": "appcanivales",
+  "cli": {
+    "analytics": "f4d56526-e345-4d81-a070-85ee9139fb48"
+  }
 }

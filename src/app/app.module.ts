@@ -39,7 +39,7 @@ import { VideoComponent } from './views/video/video.component';
     VideoComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
