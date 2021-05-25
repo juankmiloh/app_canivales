@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "dev:ssr": "ng run appcanivales:serve-ssr",
     "serve:ssr": "node dist/appcanivales",
-    "build:ssr": "npm run build:client-and-server-bundles && npm run appcanivales:server:production",
+    "build:ssr": "ng build --prod && ng run appcanivales:server:production",
     "prerender": "ng run appcanivales:prerender",
     "build:client-and-server-bundles": "ng build --prod && ng run appcanivales:server:production --bundleDependencies all",
     "start:heroku": "node dist/server",
