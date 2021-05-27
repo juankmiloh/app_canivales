@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { modelDecisiones } from 'src/app/models/decisiones';
+import { ScoresService } from 'src/app/services/scores.service';
 
 @Component({
   selector: 'app-juego',
@@ -20,7 +21,8 @@ export class JuegoComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<JuegoComponent>,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private scoresService: ScoresService
   ) { }
 
   ngOnInit(): void {
@@ -55,12 +57,8 @@ export class JuegoComponent implements OnInit {
       if (opc === 'Guardar') {
         // console.log('Has ganado!');
         const jugador = sessionStorage.getItem('jugador');
-        this.scores = JSON.parse(localStorage.getItem('scores'));
-        if (!this.scores) {
-          this.scores = [];
-        }
-        this.scores.push({ user: jugador, horas: this.horas, minutos: this.minutos, segundos: this.segundos });
-        localStorage.setItem('scores', JSON.stringify(this.scores));
+        const model = { name: jugador, hour: this.horas, minute: this.minutos, second: this.segundos };
+        this.scoresService.setScores(model);
         this.dialogRef.close();
         this.openSnackBar(`${jugador} se ha guardado tu score exitosamente!`, null);
       } else {

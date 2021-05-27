@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScoresService } from 'src/app/services/scores.service';
 
 @Component({
   selector: 'app-score',
@@ -7,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScoreComponent implements OnInit {
 
-  scores: any;
+  scores: any[] = [];
 
-  constructor() { }
+  constructor(
+    private scoresService: ScoresService
+  ) { }
 
   ngOnInit(): void {
-    this.scores = JSON.parse(localStorage.getItem('scores'));
-    this.scores = this.ordenarArray(this.scores, 'segundos');
-    this.scores = this.ordenarArray(this.scores, 'minutos');
-    this.scores = this.ordenarArray(this.scores, 'horas');
+    this.loadScores();
   }
 
   ordenarArray(array, propiedad) {
@@ -30,6 +30,19 @@ export class ScoreComponent implements OnInit {
       return 0;
     });
     return array;
+  }
+
+  // Se hace llamado al servicio para obtener scores
+  loadScores() {
+    this.scoresService.getScores().then( (resp: any) => {
+      // console.log('scores -> ', resp);
+      this.scores = resp;
+      this.scores = this.ordenarArray(this.scores, 'second');
+      this.scores = this.ordenarArray(this.scores, 'minute');
+      this.scores = this.ordenarArray(this.scores, 'hour');
+    }, (error) => {
+      // console.log(error);
+    });
   }
 
 }

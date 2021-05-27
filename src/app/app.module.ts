@@ -28,6 +28,8 @@ import { ScoreComponent } from './views/score/score.component';
 import { JuegoComponent } from './views/juego/juego.component';
 import { VideoComponent } from './views/video/video.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +59,8 @@ import { VideoComponent } from './views/video/video.component';
     MatProgressSpinnerModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
