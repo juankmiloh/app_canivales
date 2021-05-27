@@ -2,13 +2,13 @@ export const modelEstudiantes = [
     {
         name: 'Juan Camilo Herrera Ardila',
         email: 'juankmiloh@hotmail.com',
-        phone: '311 8683006',
+        phone: '(311) - 868 3006',
         image: '/assets/user.png'
     },
     {
         name: 'Sebastian Vega',
-        email: '',
-        phone: '',
+        email: 'juan_sebas9419@hotmail.com',
+        phone: '(321) - 266 4870',
         image: '/assets/user.png'
     },
     {
