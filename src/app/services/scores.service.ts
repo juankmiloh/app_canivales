@@ -25,7 +25,7 @@ export class ScoresService {
   // Enviar data de scores
   setScores(data) {
     return this.http.post(`${this.serverUrl}/saveScore`, data).subscribe((resp) => {
-      console.log(resp);
+      // console.log(resp);
     });
   }
 

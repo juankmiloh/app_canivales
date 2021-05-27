@@ -10,6 +10,7 @@ import { ScoresService } from 'src/app/services/scores.service';
 export class ScoreComponent implements OnInit {
 
   scores: any[] = [];
+  banderaScores = false;
 
   constructor(
     private bottomSheetRef: MatBottomSheetRef<ScoreComponent>,
@@ -51,7 +52,8 @@ export class ScoreComponent implements OnInit {
       resultados = this.ordenarArray(resultados, 'minute');
       resultados = this.ordenarArray(resultados, 'hour');
       this.scores = resultados;
-      this.changeDetectorRef.detectChanges();
+      this.banderaScores = true;
+      this.changeDetectorRef.detectChanges(); // Línea para detectar y actaulizar los cambios reactivos en el modal
     }, (error) => {
       // console.log(error);
     });

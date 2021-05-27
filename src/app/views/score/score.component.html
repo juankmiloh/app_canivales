@@ -1,14 +1,35 @@
 <mat-list>
-    <div mat-subheader *ngIf="scores.length === 0">Cargando...</div>
-    <div mat-subheader *ngIf="scores.length > 0">Scores</div>
-    <mat-progress-bar mode="indeterminate" *ngIf="scores.length === 0"></mat-progress-bar>
+    <div mat-subheader *ngIf="!banderaScores">Cargando...</div>
+    <h3 *ngIf="banderaScores">Scores</h3>
     <mat-divider></mat-divider>
-    <div *ngIf="scores.length > 0">
-        <mat-list-item *ngFor="let score of scores;">
+    <mat-progress-bar mode="indeterminate" *ngIf="!banderaScores"></mat-progress-bar>
+    <div mat-subheader *ngIf="scores.length === 0 && banderaScores">No hay registros</div>
+    <mat-divider></mat-divider>
+    <div *ngIf="banderaScores">
+        <mat-list-item *ngFor="let score of scores; index as i;">
             <mat-divider></mat-divider>
-            <mat-icon mat-list-icon>timer</mat-icon>
-            <div mat-line>{{score.name}}</div>
-            <div mat-line>Tiempo. <span *ngIf="score.hour < 10">0</span>{{ score.hour }} : <span *ngIf="score.minute < 10">0</span>{{ score.minute }} : <span *ngIf="score.second < 10">0</span>{{ score.second }} </div>
+            <div class="row" style="width: 100%;">
+                <div class="col-3" style="border: 0px solid blue;">
+                    <div class="row" style="padding-top: 30%;">
+                        <div class="col-5" style="border: 0px solid blue; text-align: right;">
+                            <div mat-line><b>{{i + 1}}</b></div>
+                        </div>
+                        <div *ngIf="i === 0" class="col-7" style="border: 0px solid blue; text-align: center;">
+                            <img src="/assets/oro.png" width="15" height="25">
+                        </div>
+                        <div *ngIf="i !== 0" class="col-7" style="border: 0px solid blue; text-align: center;">
+                            <img src="/assets/plata.jpg" width="30" height="30">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9" style="border: 0px solid blue;">
+                    <div mat-line>{{score.name}}</div>
+                    <div mat-line><div style="display: flex; align-items: center; padding-top: 1.5%; font-size: small">
+                        <mat-icon mat-list-icon style="font-size: large;">timer</mat-icon><span *ngIf="score.hour < 10">0</span>{{ score.hour }} :&nbsp;<span *ngIf="score.minute < 10">0</span>{{ score.minute }} :&nbsp;<span *ngIf="score.second < 10">0</span>{{ score.second }}</div>
+                        <span style="font-size: x-small;">Registro realizado. {{ score.timestamp |  date:'dd/MM/yyyy' }}</span>
+                    </div>
+                </div>
+            </div>
         </mat-list-item>
     </div>
 </mat-list>
