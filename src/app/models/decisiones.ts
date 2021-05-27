@@ -13,7 +13,7 @@ export const modelDecisiones = {
         ],
         respuesta: 'Si',
         decision: 'decision2',
-        progreso: 30
+        progreso: 10
     },
     decision2: {
         titulo: 'Decisión 2',
@@ -32,7 +32,7 @@ export const modelDecisiones = {
         ],
         respuesta: 'Cuchara',
         decision: 'decision3',
-        progreso: 60
+        progreso: 20
     },
     decision3: {
         titulo: 'Decisión 3',
@@ -50,8 +50,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Realizar un plan entre ellos',
-        decision: 'decisionBuena',
-        progreso: 80
+        decision: 'decision4',
+        progreso: 30
     },
     decision4: {
         titulo: 'Decisión 4',
@@ -69,8 +69,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Mostrarles el mapa de la región',
-        decision: 'decisionBuena',
-        progreso: 80
+        decision: 'decision5',
+        progreso: 40
     },
     decision5: {
         titulo: 'Decisión 5',
@@ -88,8 +88,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Conocer la ruta de escape',
-        decision: 'decisionBuena',
-        progreso: 80
+        decision: 'decision6',
+        progreso: 50
     },
     decision6: {
         titulo: 'Decisión 6',
@@ -107,8 +107,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Sí hay canívales de guardias',
-        decision: 'decisionBuena',
-        progreso: 80
+        decision: 'decision7',
+        progreso: 60
     },
     decision7: {
         titulo: 'Decisión 7',
@@ -126,8 +126,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Escapar ahora mismo',
-        decision: 'decisionBuena',
-        progreso: 80
+        decision: 'decision8',
+        progreso: 70
     },
     decision8: {
         titulo: 'Decisión 8',
@@ -145,7 +145,7 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Planear una estrategía para engañarlos',
-        decision: 'decisionBuena',
+        decision: 'decision9',
         progreso: 80
     },
     decision9: {
@@ -164,8 +164,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Rociarle quipitos',
-        decision: 'decisionBuena',
-        progreso: 80
+        decision: 'decision10',
+        progreso: 90
     },
     decision10: {
         titulo: 'Decisión 10',
@@ -184,7 +184,7 @@ export const modelDecisiones = {
         ],
         respuesta: 'Tentar a los canívales a probar los Kipitos',
         decision: 'decisionBuena',
-        progreso: 80
+        progreso: 100
     },
     decisionBuena: {
         titulo: 'Felicitaciones, sobreviviste!!!',
