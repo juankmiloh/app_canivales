@@ -1,9 +1,10 @@
 <mat-list>
-    <div mat-subheader>Scores</div>
+    <div mat-subheader *ngIf="scores.length === 0">Cargando...</div>
+    <div mat-subheader *ngIf="scores.length > 0">Scores</div>
     <mat-progress-bar mode="indeterminate" *ngIf="scores.length === 0"></mat-progress-bar>
     <mat-divider></mat-divider>
     <div *ngIf="scores.length > 0">
-        <mat-list-item *ngFor="let score of scores">
+        <mat-list-item *ngFor="let score of scores;">
             <mat-divider></mat-divider>
             <mat-icon mat-list-icon>timer</mat-icon>
             <div mat-line>{{score.name}}</div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, OnInit } from '@angular/core';
+import { MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA } from '@angular/material/bottom-sheet';
 import { ScoresService } from 'src/app/services/scores.service';
 
 @Component({
@@ -11,11 +12,20 @@ export class ScoreComponent implements OnInit {
   scores: any[] = [];
 
   constructor(
-    private scoresService: ScoresService
+    private bottomSheetRef: MatBottomSheetRef<ScoreComponent>,
+    private scoresService: ScoresService,
+    @Inject(MAT_BOTTOM_SHEET_DATA) public data: any,
+    private changeDetectorRef: ChangeDetectorRef
   ) { }
 
-  ngOnInit(): void {
-    this.loadScores();
+  async ngOnInit(): Promise<void> {
+    this.afterOpenDialog();
+  }
+
+  afterOpenDialog() {
+    this.bottomSheetRef.afterOpened().subscribe(async (evt) => {
+      await this.loadScores();
+    });
   }
 
   ordenarArray(array, propiedad) {
@@ -33,13 +43,15 @@ export class ScoreComponent implements OnInit {
   }
 
   // Se hace llamado al servicio para obtener scores
-  loadScores() {
-    this.scoresService.getScores().then( (resp: any) => {
+  async loadScores() {
+    await this.scoresService.getScores().then( (resp: any) => {
       // console.log('scores -> ', resp);
-      this.scores = resp;
-      this.scores = this.ordenarArray(this.scores, 'second');
-      this.scores = this.ordenarArray(this.scores, 'minute');
-      this.scores = this.ordenarArray(this.scores, 'hour');
+      let resultados = resp;
+      resultados = this.ordenarArray(resultados, 'second');
+      resultados = this.ordenarArray(resultados, 'minute');
+      resultados = this.ordenarArray(resultados, 'hour');
+      this.scores = resultados;
+      this.changeDetectorRef.detectChanges();
     }, (error) => {
       // console.log(error);
     });
