@@ -15,11 +15,32 @@
                 {{ decisiones[decisionSelect].descripcion }}
             </p>
         </mat-card-content>
+        
         <mat-divider></mat-divider>
-        <mat-card-actions align="center">
+        
+        <!-- Vista de dispositivo móvil -->
+        <div class="row vista-movil">
+            <div *ngFor="let item of decisiones[decisionSelect].opciones;">
+                <div class="example-ripple-container"
+                    matRipple
+                    [matRippleCentered]="centered"
+                    [matRippleDisabled]="disabled"
+                    [matRippleUnbounded]="unbounded"
+                    [matRippleRadius]="radius"
+                    [matRippleColor]="color"
+                    (click)="validarOpcion(item.opcion)">
+                    <p style="font-weight: 500;">{{ item.opcion }}</p>
+                </div>
+                <mat-divider></mat-divider>
+            </div>
+        </div>
+
+        <!-- Vista de PC -->
+        <mat-card-actions align="center" class="vista-pc">
             <button mat-button *ngFor="let item of decisiones[decisionSelect].opciones;"
                 (click)="validarOpcion(item.opcion)">{{ item.opcion }}</button>
         </mat-card-actions>
+
     </mat-card>
     <br>
     <mat-progress-bar mode="determinate" [value]="decisiones[decisionSelect].progreso"></mat-progress-bar>

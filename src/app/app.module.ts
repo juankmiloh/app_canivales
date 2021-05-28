@@ -20,6 +20,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatRippleModule} from '@angular/material/core';
 
 import { NosotrosComponent } from './views/nosotros/nosotros.component';
 import { HomeComponent } from './views/home/home.component';
@@ -60,6 +61,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatInputModule,
     MatSnackBarModule,
+    MatRippleModule,
     HttpClientModule
   ],
   providers: [],

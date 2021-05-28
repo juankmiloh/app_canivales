@@ -18,6 +18,12 @@ export class JuegoComponent implements OnInit {
   segundos = 0;
   interval: any;
   scores: any;
+  centered = false;
+  disabled = false;
+  unbounded = false;
+
+  radius: number;
+  color: string;
 
   constructor(
     public dialogRef: MatDialogRef<JuegoComponent>,
@@ -50,7 +56,7 @@ export class JuegoComponent implements OnInit {
   }
 
   validarOpcion(opc: string) {
-    if (opc === 'Rociarle quipitos') {
+    if (this.decisiones[this.decisionSelect].tipoDecision === 'Final') {
       this.pauseTimer();
     }
     if (opc === this.decisiones[this.decisionSelect].respuesta) {
@@ -62,7 +68,7 @@ export class JuegoComponent implements OnInit {
         this.dialogRef.close();
         this.openSnackBar(`${jugador} se ha guardado tu score exitosamente!`, null);
       } else {
-        this.decisionSelect = this.decisiones[this.decisionSelect].decision;
+        this.decisionSelect = this.decisiones[this.decisionSelect].siguienteDecision;
       }
     } else {
       this.decisionSelect = 'decisionMuerte';

@@ -12,7 +12,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Si',
-        decision: 'decision2',
+        siguienteDecision: 'decision2',
+        tipoDecision: 'En curso',
         progreso: 10
     },
     decision2: {
@@ -31,7 +32,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Cuchara',
-        decision: 'decision3',
+        siguienteDecision: 'decision3',
+        tipoDecision: 'En curso',
         progreso: 20
     },
     decision3: {
@@ -50,7 +52,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Realizar un plan entre ellos',
-        decision: 'decision4',
+        siguienteDecision: 'decision4',
+        tipoDecision: 'En curso',
         progreso: 30
     },
     decision4: {
@@ -69,7 +72,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Mostrarles el mapa de la región',
-        decision: 'decision5',
+        siguienteDecision: 'decision5',
+        tipoDecision: 'En curso',
         progreso: 40
     },
     decision5: {
@@ -88,7 +92,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Conocer la ruta de escape',
-        decision: 'decision6',
+        siguienteDecision: 'decision6',
+        tipoDecision: 'En curso',
         progreso: 50
     },
     decision6: {
@@ -107,7 +112,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Sí hay canívales de guardias',
-        decision: 'decision7',
+        siguienteDecision: 'decision7',
+        tipoDecision: 'En curso',
         progreso: 60
     },
     decision7: {
@@ -126,7 +132,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Escapar ahora mismo',
-        decision: 'decision8',
+        siguienteDecision: 'decision8',
+        tipoDecision: 'En curso',
         progreso: 70
     },
     decision8: {
@@ -135,7 +142,7 @@ export const modelDecisiones = {
         descripcion: 'Sí aún quedan algunos canívales despiertos y muchos otros haciendo guardía, ellos deberían...',
         opciones: [
             {
-                opcion: 'Planear una estrategia para engañarlos'
+                opcion: 'Planear una estrategía para engañarlos'
             },
             {
                 opcion: 'Jugar ajedrez con ellos'
@@ -145,7 +152,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Planear una estrategía para engañarlos',
-        decision: 'decision9',
+        siguienteDecision: 'decision9',
+        tipoDecision: 'En curso',
         progreso: 80
     },
     decision9: {
@@ -164,7 +172,8 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Rociarle quipitos',
-        decision: 'decision10',
+        siguienteDecision: 'decision10',
+        tipoDecision: 'En curso',
         progreso: 90
     },
     decision10: {
@@ -183,8 +192,9 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Tentar a los canívales a probar los Kipitos',
-        decision: 'decisionBuena',
-        progreso: 100
+        siguienteDecision: 'decisionBuena',
+        tipoDecision: 'Final',
+        progreso: 95
     },
     decisionBuena: {
         titulo: 'Felicitaciones, sobreviviste!!!',
@@ -206,6 +216,6 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Reintentar',
-        decision: 'decision1'
+        siguienteDecision: 'decision1'
     }
 };
