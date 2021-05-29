@@ -38,7 +38,7 @@ export const modelDecisiones = {
     },
     decision3: {
         titulo: 'Decisión 3',
-        imagen: '/assets/decision3.jpg',
+        imagen: '/assets/canibales_s3.png',
         descripcion: 'Los personajes están libres, ¿Qué deben hacer?',
         opciones: [
             {
