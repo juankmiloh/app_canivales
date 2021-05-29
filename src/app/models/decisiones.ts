@@ -38,14 +38,14 @@ export const modelDecisiones = {
     },
     decision3: {
         titulo: 'Decisión 3',
-        imagen: '/assets/canibales_s3.png',
+        imagen: '/assets/decision3.png',
         descripcion: 'Los personajes están libres, ¿Qué deben hacer?',
         opciones: [
             {
                 opcion: 'Realizar un plan entre ellos'
             },
             {
-                opcion: 'Pelear con los canívales'
+                opcion: 'Pelear con los Caníbales'
             },
             {
                 opcion: 'Ir por algo de comer'
@@ -58,7 +58,7 @@ export const modelDecisiones = {
     },
     decision4: {
         titulo: 'Decisión 4',
-        imagen: '/assets/decision3.jpg',
+        imagen: '/assets/decision4.png',
         descripcion: 'Al realizar el plan <nombre> decide...',
         opciones: [
             {
@@ -78,7 +78,7 @@ export const modelDecisiones = {
     },
     decision5: {
         titulo: 'Decisión 5',
-        imagen: '/assets/decision3.jpg',
+        imagen: '/assets/decision5.png',
         descripcion: 'Con el mapa de la región, ¿Qué deberían hacer?',
         opciones: [
             {
@@ -88,7 +88,7 @@ export const modelDecisiones = {
                 opcion: 'Conocer la ruta de escape'
             },
             {
-                opcion: 'Conocer el hospedaje de los canívales'
+                opcion: 'Conocer el hospedaje de los caníbales'
             }
         ],
         respuesta: 'Conocer la ruta de escape',
@@ -98,27 +98,27 @@ export const modelDecisiones = {
     },
     decision6: {
         titulo: 'Decisión 6',
-        imagen: '/assets/decision3.jpg',
-        descripcion: '¿Qué deberían tener en cuenta al concoer la ruta de escape?',
+        imagen: '/assets/decision6.png',
+        descripcion: '¿Qué deberían tener en cuenta al conocer la ruta de escape?',
         opciones: [
             {
-                opcion: 'Sí hay canívales de guardias'
+                opcion: 'Si hay caníbales de guardias'
             },
             {
-                opcion: 'Sí existen medios de transporte modernos'
+                opcion: 'Si existen medios de transporte modernos'
             },
             {
-                opcion: 'Sí pueden dividirse y escapar por separado'
+                opcion: 'Si pueden dividirse y escapar por separado'
             }
         ],
-        respuesta: 'Sí hay canívales de guardias',
+        respuesta: 'Sí hay caníbales de guardias',
         siguienteDecision: 'decision7',
         tipoDecision: 'En curso',
         progreso: 60
     },
     decision7: {
         titulo: 'Decisión 7',
-        imagen: '/assets/decision3.jpg',
+        imagen: '/assets/decision7.png',
         descripcion: 'Al conocer la ruta y los obstaculos para escapar, ¿Qué deberían hacer?',
         opciones: [
             {
@@ -138,8 +138,8 @@ export const modelDecisiones = {
     },
     decision8: {
         titulo: 'Decisión 8',
-        imagen: '/assets/decision3.jpg',
-        descripcion: 'Sí aún quedan algunos canívales despiertos y muchos otros haciendo guardía, ellos deberían...',
+        imagen: '/assets/decision8.jpg',
+        descripcion: 'Si aún quedan algunos caníbales despiertos y muchos otros haciendo guardía, ellos deberían...',
         opciones: [
             {
                 opcion: 'Planear una estrategía para engañarlos'
@@ -158,14 +158,14 @@ export const modelDecisiones = {
     },
     decision9: {
         titulo: 'Decisión 9',
-        imagen: '/assets/decision3.jpg',
+        imagen: '/assets/decision9.png',
         descripcion: 'Dentro de la estrategia se acercan al cadaver del guía y deciden...',
         opciones: [
             {
-                opcion: 'Comerselo'
+                opcion: 'Comérselo'
             },
             {
-                opcion: 'Pelear con los canívales'
+                opcion: 'Pelear con los caníbales'
             },
             {
                 opcion: 'Rociarle quipitos'
@@ -178,7 +178,7 @@ export const modelDecisiones = {
     },
     decision10: {
         titulo: 'Decisión 10',
-        imagen: '/assets/decision3.jpg',
+        imagen: '/assets/decision10.png',
         descripcion: 'Dentro de la estrategia de engaño, ¿Cuál sería el siguiente paso?',
         opciones: [
             {
@@ -188,7 +188,7 @@ export const modelDecisiones = {
                 opcion: 'Salir corriendo del área'
             },
             {
-                opcion: 'Tentar a los canívales a probar los Kipitos'
+                opcion: 'Tentar a los caníbales a probar los Kipitos'
             }
         ],
         respuesta: 'Tentar a los canívales a probar los Kipitos',
