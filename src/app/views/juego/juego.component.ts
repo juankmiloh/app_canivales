@@ -83,4 +83,8 @@ export class JuegoComponent implements OnInit {
     });
   }
 
+  closeDialog() {
+    this.dialogRef.close();
+  }
+
 }

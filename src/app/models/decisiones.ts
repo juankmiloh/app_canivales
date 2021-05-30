@@ -74,7 +74,7 @@ export const modelDecisiones = {
         respuesta: 'Mostrarles el mapa de la región',
         siguienteDecision: 'decision5',
         tipoDecision: 'En curso',
-        progreso: 25
+        progreso: 30
     },
     decision5: {
         titulo: 'Decisión 5',
@@ -94,7 +94,7 @@ export const modelDecisiones = {
         respuesta: 'Conocer la ruta de escape',
         siguienteDecision: 'decision6',
         tipoDecision: 'En curso',
-        progreso: 30
+        progreso: 40
     },
     decision6: {
         titulo: 'Decisión 6',
@@ -114,7 +114,7 @@ export const modelDecisiones = {
         respuesta: 'Si hay caníbales guardianes o vigilantes',
         siguienteDecision: 'decision7',
         tipoDecision: 'En curso',
-        progreso: 35
+        progreso: 50
     },
     decision7: {
         titulo: 'Decisión 7',
@@ -128,13 +128,13 @@ export const modelDecisiones = {
                 opcion: 'Escapar durante la tarde luego de la hora del almuerzo'
             },
             {
-                opcion: 'Ejecutar el plan de espace ahora mismo'
+                opcion: 'Ejecutar el plan de escape ahora mismo'
             }
         ],
-        respuesta: 'Ejecutar el plan de espace ahora mismo',
+        respuesta: 'Ejecutar el plan de escape ahora mismo',
         siguienteDecision: 'decision8',
         tipoDecision: 'En curso',
-        progreso: 40
+        progreso: 60
     },
     decision8: {
         titulo: 'Decisión 8',
@@ -154,7 +154,7 @@ export const modelDecisiones = {
         respuesta: 'Planear una estrategía para engañarlos',
         siguienteDecision: 'decision9',
         tipoDecision: 'En curso',
-        progreso: 45
+        progreso: 70
     },
     decision9: {
         titulo: 'Decisión 9',
@@ -174,7 +174,7 @@ export const modelDecisiones = {
         respuesta: 'Rociarle Quipitos',
         siguienteDecision: 'decision10',
         tipoDecision: 'En curso',
-        progreso: 50
+        progreso: 80
     },
     decision10: {
         titulo: 'Decisión 10',
@@ -193,12 +193,12 @@ export const modelDecisiones = {
         ],
         respuesta: 'Tentar a los caníbales a probar los Quipitos',
         siguienteDecision: 'decision11',
-        tipoDecision: 'Final',
-        progreso: 55
+        tipoDecision: 'En curso',
+        progreso: 90
     },
     decision11: {
         titulo: 'Decisión 11',
-        imagen: '/assets/decision11.png',
+        imagen: '/assets/decision11_1.png',
         descripcion: 'Los caníbales se ven sorprendidos por los Quipitos pensando que están envenenados, el siguiente paso es:',
         opciones: [
             {
@@ -214,7 +214,7 @@ export const modelDecisiones = {
         respuesta: 'Persuadir a los caníbales de un verdadero envenenamiento',
         siguienteDecision: 'decisionBuena',
         tipoDecision: 'Final',
-        progreso: 60
+        progreso: 95
     },
     decisionBuena: {
         titulo: 'Felicitaciones, sobreviviste!!!',

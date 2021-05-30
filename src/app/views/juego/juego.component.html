@@ -1,9 +1,12 @@
 <div class="row">
-    <div class="col-7" style="border: 0px solid blue;">
+    <div class="col-5" style="border: 0px solid blue; align-items: center;">
         <h3 mat-dialog-title><b>{{ decisiones[decisionSelect].titulo }}</b></h3>
     </div>
     <div class="col-5" style="border: 0px solid red; text-align: right;">
         <h3 mat-dialog-title><span *ngIf="horas < 10">0</span>{{horas}} : <span *ngIf="minutos < 10">0</span>{{minutos}} : <span *ngIf="segundos < 10">0</span>{{segundos}}</h3>
+    </div>
+    <div class="col-2" style="border: 0px solid red; text-align: right;">
+        <mat-icon style="cursor: pointer;" color="warn" (click)="closeDialog()">close</mat-icon>
     </div>
 </div>
 <mat-dialog-content style="border: 0px solid red;">
@@ -17,7 +20,7 @@
         </mat-card-content>
         
         <mat-divider></mat-divider>
-        
+
         <!-- Vista de dispositivo móvil -->
         <div class="row vista-movil">
             <div *ngFor="let item of decisiones[decisionSelect].opciones;">

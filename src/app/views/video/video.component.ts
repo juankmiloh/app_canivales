@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { JuegoComponent } from '../juego/juego.component';
 
 @Component({
@@ -12,7 +12,8 @@ export class VideoComponent implements OnInit {
   x: MediaQueryList;
 
   constructor(
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    public dialogRef: MatDialogRef<VideoComponent>,
   ) { }
 
   ngOnInit(): void {
@@ -27,6 +28,10 @@ export class VideoComponent implements OnInit {
       disableClose: true,
       data: {},
     });
+  }
+
+  closeDialog() {
+    this.dialogRef.close();
   }
 
 }

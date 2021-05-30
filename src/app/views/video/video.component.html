@@ -1,4 +1,13 @@
-<h2 mat-dialog-title>¡Sálvese quien pueda!</h2>
+<div class="row">
+    <div class="col-10" style="border: 0px solid blue;">
+        <h2 mat-dialog-title>¡Sálvese quien pueda!</h2>
+    </div>
+    <div class="col-2" style="border: 0px solid red; text-align: right;">
+        <button mat-icon-button (click)="closeDialog()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</div>
 <mat-dialog-content>
     <div class="row">
         <div class="col-sm-12 col-md-12" style="border: 0px solid red;">
