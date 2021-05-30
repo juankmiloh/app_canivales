@@ -138,7 +138,7 @@ export const modelDecisiones = {
     },
     decision8: {
         titulo: 'Decisión 8',
-        imagen: '/assets/decision8.jpg',
+        imagen: '/assets/decision8.png',
         descripcion: 'Si aún quedan algunos caníbales despiertos y muchos otros haciendo guardía, ellos deberían...',
         opciones: [
             {
@@ -191,7 +191,7 @@ export const modelDecisiones = {
                 opcion: 'Tentar a los caníbales a probar los Quipitos'
             }
         ],
-        respuesta: 'Tentar a los canívales a probar los Quipitos',
+        respuesta: 'Tentar a los caníbales a probar los Quipitos',
         siguienteDecision: 'decision11',
         tipoDecision: 'Final',
         progreso: 55
