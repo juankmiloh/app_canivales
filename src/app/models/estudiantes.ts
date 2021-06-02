@@ -13,8 +13,8 @@ export const modelEstudiantes = [
     },
     {
         name: 'Luz Amanda Quilindo',
-        email: '',
-        phone: '',
+        email: 'luzamanda@gmail.com',
+        phone: '(318) 558 0371',
         image: '/assets/user.png'
     },
     {
