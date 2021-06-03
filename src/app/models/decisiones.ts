@@ -1,6 +1,6 @@
 export const modelDecisiones = {
     decision0: {
-        titulo: 'Decisión 1',
+        titulo: 'Decision 0',
         imagen: '/assets/amanecer.jfif',
         descripcion: 'Los personajes se encuentran prisioneros, ¿Cuá es el  mejor momento para huir?',
         opciones: [
@@ -15,9 +15,9 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Al amanecer, dado que es hay una luz tenue  y los canibales se encuentran en su nivel mas profundo de sueño',
-        siguienteDecision:  'Decisión 1',
+        siguienteDecision: 'decision1',
         tipoDecision: 'En curso',
-        progreso: 2
+        progreso: 6
     },
 
 
@@ -38,7 +38,7 @@ export const modelDecisiones = {
         respuesta: 'Si',
         siguienteDecision: 'decision2',
         tipoDecision: 'En curso',
-        progreso: 10
+        progreso: 12
     },
     decision2: {
         titulo: 'Decisión 2',
@@ -58,7 +58,7 @@ export const modelDecisiones = {
         respuesta: 'Cuchara',
         siguienteDecision: 'decision3',
         tipoDecision: 'En curso',
-        progreso: 15
+        progreso: 18
     },
     decision3: {
         titulo: 'Decisión 3',
@@ -78,7 +78,7 @@ export const modelDecisiones = {
         respuesta: 'Realizar un plan entre ellos',
         siguienteDecision: 'decision4',
         tipoDecision: 'En curso',
-        progreso: 20
+        progreso: 24
     },
     decision4: {
         titulo: 'Decisión 4',
@@ -118,7 +118,7 @@ export const modelDecisiones = {
         respuesta: 'Conocer la ruta de escape',
         siguienteDecision: 'decision6',
         tipoDecision: 'En curso',
-        progreso: 40
+        progreso: 36
     },
     decision6: {
         titulo: 'Decisión 6',
@@ -138,7 +138,7 @@ export const modelDecisiones = {
         respuesta: 'Si hay caníbales guardianes o vigilantes',
         siguienteDecision: 'decision7',
         tipoDecision: 'En curso',
-        progreso: 50
+        progreso: 42
     },
     decision7: {
         titulo: 'Decisión 7',
@@ -158,7 +158,7 @@ export const modelDecisiones = {
         respuesta: 'Ejecutar el plan de escape ahora mismo',
         siguienteDecision: 'decision8',
         tipoDecision: 'En curso',
-        progreso: 60
+        progreso: 48
     },
     decision8: {
         titulo: 'Decisión 8',
@@ -178,7 +178,7 @@ export const modelDecisiones = {
         respuesta: 'Planear una estrategía para engañarlos',
         siguienteDecision: 'decision9',
         tipoDecision: 'En curso',
-        progreso: 70
+        progreso: 54
     },
     decision9: {
         titulo: 'Decisión 9',
@@ -198,7 +198,7 @@ export const modelDecisiones = {
         respuesta: 'Rociarle Quipitos',
         siguienteDecision: 'decision10',
         tipoDecision: 'En curso',
-        progreso: 80
+        progreso: 60
     },
     decision10: {
         titulo: 'Decisión 10',
@@ -218,9 +218,9 @@ export const modelDecisiones = {
         respuesta: 'Tentar a los caníbales a probar los Quipitos',
         siguienteDecision: 'decision11',
         tipoDecision: 'En curso',
-        progreso: 90
+        progreso: 66
     },
-    
+
     decision11: {
         titulo: 'Decisión 11',
         imagen: '/assets/decision11_1.png',
@@ -239,7 +239,7 @@ export const modelDecisiones = {
         respuesta: 'Persuadir a los caníbales de un verdadero envenenamiento',
         siguienteDecision: 'decision12',
         tipoDecision: 'En curso',
-        progreso: 95
+        progreso: 72
     },
     decision12: {
         titulo: 'Decisión 12',
@@ -250,7 +250,7 @@ export const modelDecisiones = {
                 opcion: 'Se dirigen a un punto de encuentro previamente acordado al revisar el mapa de la region'
             },
             {
-                opcion: 'Se dirigen a buscar la cura del envenenamiento' 
+                opcion: 'Se dirigen a buscar la cura del envenenamiento'
             },
             {
                 opcion: 'Se van corriendo en circulos'
@@ -259,9 +259,9 @@ export const modelDecisiones = {
         respuesta: 'Se dirigen a un punto de encuentro previamente acordado al revisar el mapa de la region',
         siguienteDecision: 'decision13',
         tipoDecision: 'En curso',
-        progreso: 95
+        progreso: 78
     },
-        decision13: {
+    decision13: {
         titulo: 'Decisión 13',
         imagen: '/assets/decision13.jpg',
         descripcion: 'Mientras tanto el hombre que sabe supervivencia y el hombre que conoce la zona son encerrados de nuevo, ¿cual sera la nueva estrategia de escape? ',
@@ -270,7 +270,7 @@ export const modelDecisiones = {
                 opcion: 'Convertirse en amigos de la tribu para que les de comida '
             },
             {
-                opcion: 'Esperar a que regresen los compañeros ' 
+                opcion: 'Esperar a que regresen los compañeros '
             },
             {
                 opcion: 'Esperar que caiga la noche y proyectar sombras con una linterna y disuadir a la tribu'
@@ -279,29 +279,29 @@ export const modelDecisiones = {
         respuesta: 'Esperar que caiga la noche y proyectar sombras con una linterna y disuadir a la tribu',
         siguienteDecision: 'decision14',
         tipoDecision: 'En curso',
-        progreso: 95
+        progreso: 84
     },
     decision14: {
         titulo: 'Decisión 14',
         imagen: '/assets/decision14.jpg',
-        descripcion: 'La tribu vio las sombras y salio del refujio a revisar con quien se encontraba , ¿cual es el siguiente paso de los capturados?',
+        descripcion: 'La tribu vio las sombras y salio del refugio a revisar con quien se encontraba , ¿cual es el siguiente paso de los capturados?',
         opciones: [
             {
                 opcion: 'Salir de la jaula y comer un poco'
             },
             {
-                opcion: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu ' 
+                opcion: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu '
             },
             {
-                opcion: 'Esperar a que regresen los compañeros '
+                opcion: 'Esperar a que regresen los compañeros'
             }
         ],
         respuesta: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu ',
         siguienteDecision: 'decision15',
         tipoDecision: 'En curso',
-        progreso: 95
+        progreso: 90
     },
-        decision15: {
+    decision15: {
         titulo: 'Decisión 15',
         imagen: '/assets/decision15.jpg',
         descripcion: 'Los hombres han logrado escapar hacia donde se dirigen',
@@ -310,7 +310,7 @@ export const modelDecisiones = {
                 opcion: 'Se dirigen al punto de encuentro con los otros compañeros'
             },
             {
-                opcion: 'Al infinito y mas alla' 
+                opcion: 'Al infinito y mas alla'
             },
             {
                 opcion: 'Volveran a la jaula '
@@ -319,9 +319,9 @@ export const modelDecisiones = {
         respuesta: 'Se dirigen al punto de encuentro con los otros compañeros',
         siguienteDecision: 'decision16',
         tipoDecision: 'En curso',
-        progreso: 95
+        progreso: 96
     },
-        decision16: {
+    decision16: {
         titulo: 'Decisión 16',
         imagen: '/assets/decision16.jpg',
         descripcion: 'Los hombres estan cerca del punto de encuentro pero alcanzan a ver que a sus compañeros aun los acompaña el miembro de la tribu ¿Como lograran escapar?',
@@ -330,16 +330,16 @@ export const modelDecisiones = {
                 opcion: 'Huyendo únicamente ellos 2'
             },
             {
-                opcion: 'Sobornando al hombre de la tribu' 
+                opcion: 'Sobornando al hombre de la tribu'
             },
             {
-                opcion: 'Asesinando al hombre de la tribu y siguiendo el plan de escape '
+                opcion: 'Asesinando al hombre de la tribu y siguiendo el plan de escape'
             }
         ],
         respuesta: 'Asesinando al hombre de la tribu y siguiendo el plan de escape',
         siguienteDecision: 'decisionBuena',
         tipoDecision: 'Final',
-        progreso: 95
+        progreso: 99
     },
     decisionBuena: {
         titulo: 'Felicitaciones, sobreviviste!!!',
@@ -361,6 +361,6 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Reintentar',
-        siguienteDecision: 'decision1'
+        siguienteDecision: 'decision0'
     }
 };

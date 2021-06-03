@@ -12,7 +12,7 @@ import { ScoresService } from 'src/app/services/scores.service';
 export class JuegoComponent implements OnInit {
 
   decisiones = modelDecisiones;
-  decisionSelect = 'decision1';
+  decisionSelect = 'decision0';
   horas = 0;
   minutos = 0;
   segundos = 0;
