@@ -15,7 +15,9 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Al amanecer, dado que es hay una luz tenue  y los canibales se encuentran en su nivel mas profundo de sueño',
-        siguienteDecision: 'decision1',
+        respuesta2: 'En la noche,  dado que hombre que sabe de supervivencia es obeso',
+        siguienteDecision:  'decision1',
+        siguienteDecision2:  'decision16',
         tipoDecision: 'En curso',
         progreso: 6
     },
@@ -220,7 +222,7 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 66
     },
-
+    
     decision11: {
         titulo: 'Decisión 11',
         imagen: '/assets/decision11_1.png',
@@ -250,7 +252,7 @@ export const modelDecisiones = {
                 opcion: 'Se dirigen a un punto de encuentro previamente acordado al revisar el mapa de la region'
             },
             {
-                opcion: 'Se dirigen a buscar la cura del envenenamiento'
+                opcion: 'Se dirigen a buscar la cura del envenenamiento' 
             },
             {
                 opcion: 'Se van corriendo en circulos'
@@ -261,7 +263,7 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 78
     },
-    decision13: {
+        decision13: {
         titulo: 'Decisión 13',
         imagen: '/assets/decision13.jpg',
         descripcion: 'Mientras tanto el hombre que sabe supervivencia y el hombre que conoce la zona son encerrados de nuevo, ¿cual sera la nueva estrategia de escape? ',
@@ -270,7 +272,7 @@ export const modelDecisiones = {
                 opcion: 'Convertirse en amigos de la tribu para que les de comida '
             },
             {
-                opcion: 'Esperar a que regresen los compañeros '
+                opcion: 'Esperar a que regresen los compañeros ' 
             },
             {
                 opcion: 'Esperar que caiga la noche y proyectar sombras con una linterna y disuadir a la tribu'
@@ -290,7 +292,7 @@ export const modelDecisiones = {
                 opcion: 'Salir de la jaula y comer un poco'
             },
             {
-                opcion: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu '
+                opcion: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu ' 
             },
             {
                 opcion: 'Esperar a que regresen los compañeros'
@@ -301,7 +303,7 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 90
     },
-    decision15: {
+        decision15: {
         titulo: 'Decisión 15',
         imagen: '/assets/decision15.jpg',
         descripcion: 'Los hombres han logrado escapar hacia donde se dirigen',
@@ -310,7 +312,7 @@ export const modelDecisiones = {
                 opcion: 'Se dirigen al punto de encuentro con los otros compañeros'
             },
             {
-                opcion: 'Al infinito y mas alla'
+                opcion: 'Al infinito y mas alla' 
             },
             {
                 opcion: 'Volveran a la jaula '
@@ -321,7 +323,7 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 96
     },
-    decision16: {
+        decision16: {
         titulo: 'Decisión 16',
         imagen: '/assets/decision16.jpg',
         descripcion: 'Los hombres estan cerca del punto de encuentro pero alcanzan a ver que a sus compañeros aun los acompaña el miembro de la tribu ¿Como lograran escapar?',
@@ -330,7 +332,7 @@ export const modelDecisiones = {
                 opcion: 'Huyendo únicamente ellos 2'
             },
             {
-                opcion: 'Sobornando al hombre de la tribu'
+                opcion: 'Sobornando al hombre de la tribu' 
             },
             {
                 opcion: 'Asesinando al hombre de la tribu y siguiendo el plan de escape'

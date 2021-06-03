@@ -12,7 +12,7 @@
 <mat-dialog-content style="border: 0px solid red;">
     <br>
     <mat-card class="example-card">
-        <img mat-card-image [src]="decisiones[decisionSelect].imagen">
+        <img mat-card-image [src]="decisiones[decisionSelect].imagen"  style="height: 200px;">
         <mat-card-content *ngIf="decisiones[decisionSelect].descripcion">
             <p style="text-align: center;">
                 {{ decisiones[decisionSelect].descripcion }}

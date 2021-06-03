@@ -59,7 +59,7 @@ export class JuegoComponent implements OnInit {
     if (this.decisiones[this.decisionSelect].tipoDecision === 'Final') {
       this.pauseTimer();
     }
-    if (opc === this.decisiones[this.decisionSelect].respuesta) {
+    if (opc === this.decisiones[this.decisionSelect].respuesta || opc === this.decisiones[this.decisionSelect].respuesta2) {
       if (opc === 'Guardar') {
         // console.log('Has ganado!');
         const jugador = sessionStorage.getItem('jugador');
@@ -68,7 +68,13 @@ export class JuegoComponent implements OnInit {
         this.dialogRef.close();
         this.openSnackBar(`${jugador} se ha guardado tu score exitosamente!`, null);
       } else {
-        this.decisionSelect = this.decisiones[this.decisionSelect].siguienteDecision;
+        if (opc === this.decisiones[this.decisionSelect].respuesta2) {
+
+          this.decisionSelect = this.decisiones[this.decisionSelect].siguienteDecision2;
+
+        } else {
+          this.decisionSelect = this.decisiones[this.decisionSelect].siguienteDecision;
+        }
       }
     } else {
       this.decisionSelect = 'decisionMuerte';
