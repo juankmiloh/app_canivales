@@ -1,4 +1,28 @@
 export const modelDecisiones = {
+    decision0: {
+        titulo: 'Decisión 1',
+        imagen: '/assets/amanecer.jfif',
+        descripcion: 'Los personajes se encuentran prisioneros, ¿Cuá es el  mejor momento para huir?',
+        opciones: [
+            {
+                opcion: 'El la tarde, ya que la mujer tiene problemas de visión'
+            },
+            {
+                opcion: 'En la noche,  dado que hombre que sabe de supervivencia es obeso'
+            },
+            {
+                opcion: 'Al amanecer, dado que es hay una luz tenue  y los canibales se encuentran en su nivel mas profundo de sueño'
+            }
+        ],
+        respuesta: 'Al amanecer, dado que es hay una luz tenue  y los canibales se encuentran en su nivel mas profundo de sueño',
+        siguienteDecision:  'Decisión 1',
+        tipoDecision: 'En curso',
+        progreso: 2
+    },
+
+
+
+
     decision1: {
         titulo: 'Decisión 1',
         imagen: '/assets/prisioneros.png',

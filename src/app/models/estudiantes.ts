@@ -19,8 +19,8 @@ export const modelEstudiantes = [
     },
     {
         name: 'Santiago Alvarez',
-        email: '',
-        phone: '',
+        email: 'santi9805@gmail.com',
+        phone: '(321) 468 5259',
         image: '/assets/user.png'
     }
 ];
