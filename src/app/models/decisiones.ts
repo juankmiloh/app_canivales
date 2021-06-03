@@ -220,6 +220,7 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 90
     },
+    
     decision11: {
         titulo: 'Decisión 11',
         imagen: '/assets/decision11_1.png',
@@ -236,6 +237,106 @@ export const modelDecisiones = {
             }
         ],
         respuesta: 'Persuadir a los caníbales de un verdadero envenenamiento',
+        siguienteDecision: 'decision12',
+        tipoDecision: 'En curso',
+        progreso: 95
+    },
+    decision12: {
+        titulo: 'Decisión 12',
+        imagen: '/assets/decision12.jpg',
+        descripcion: 'La mujer y el traductor logran persuadir a los canibales salir del refugio de la tribu acompañados de un miembro de la tribu ¿hacia donde se dirigen?',
+        opciones: [
+            {
+                opcion: 'Se dirigen a un punto de encuentro previamente acordado al revisar el mapa de la region'
+            },
+            {
+                opcion: 'Se dirigen a buscar la cura del envenenamiento' 
+            },
+            {
+                opcion: 'Se van corriendo en circulos'
+            }
+        ],
+        respuesta: 'Se dirigen a un punto de encuentro previamente acordado al revisar el mapa de la region',
+        siguienteDecision: 'decision13',
+        tipoDecision: 'En curso',
+        progreso: 95
+    },
+        decision13: {
+        titulo: 'Decisión 13',
+        imagen: '/assets/decision13.jpg',
+        descripcion: 'Mientras tanto el hombre que sabe supervivencia y el hombre que conoce la zona son encerrados de nuevo, ¿cual sera la nueva estrategia de escape? ',
+        opciones: [
+            {
+                opcion: 'Convertirse en amigos de la tribu para que les de comida '
+            },
+            {
+                opcion: 'Esperar a que regresen los compañeros ' 
+            },
+            {
+                opcion: 'Esperar que caiga la noche y proyectar sombras con una linterna y disuadir a la tribu'
+            }
+        ],
+        respuesta: 'Esperar que caiga la noche y proyectar sombras con una linterna y disuadir a la tribu',
+        siguienteDecision: 'decision14',
+        tipoDecision: 'En curso',
+        progreso: 95
+    },
+    decision14: {
+        titulo: 'Decisión 14',
+        imagen: '/assets/decision14.jpg',
+        descripcion: 'La tribu vio las sombras y salio del refujio a revisar con quien se encontraba , ¿cual es el siguiente paso de los capturados?',
+        opciones: [
+            {
+                opcion: 'Salir de la jaula y comer un poco'
+            },
+            {
+                opcion: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu ' 
+            },
+            {
+                opcion: 'Esperar a que regresen los compañeros '
+            }
+        ],
+        respuesta: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu ',
+        siguienteDecision: 'decision15',
+        tipoDecision: 'En curso',
+        progreso: 95
+    },
+        decision15: {
+        titulo: 'Decisión 15',
+        imagen: '/assets/decision15.jpg',
+        descripcion: 'Los hombres han logrado escapar hacia donde se dirigen',
+        opciones: [
+            {
+                opcion: 'Se dirigen al punto de encuentro con los otros compañeros'
+            },
+            {
+                opcion: 'Al infinito y mas alla' 
+            },
+            {
+                opcion: 'Volveran a la jaula '
+            }
+        ],
+        respuesta: 'Se dirigen al punto de encuentro con los otros compañeros',
+        siguienteDecision: 'decision16',
+        tipoDecision: 'En curso',
+        progreso: 95
+    },
+        decision16: {
+        titulo: 'Decisión 16',
+        imagen: '/assets/decision16.jpg',
+        descripcion: 'Los hombres estan cerca del punto de encuentro pero alcanzan a ver que a sus compañeros aun los acompaña el miembro de la tribu ¿Como lograran escapar?',
+        opciones: [
+            {
+                opcion: 'Huyendo únicamente ellos 2'
+            },
+            {
+                opcion: 'Sobornando al hombre de la tribu' 
+            },
+            {
+                opcion: 'Asesinando al hombre de la tribu y siguiendo el plan de escape '
+            }
+        ],
+        respuesta: 'Asesinando al hombre de la tribu y siguiendo el plan de escape',
         siguienteDecision: 'decisionBuena',
         tipoDecision: 'Final',
         progreso: 95
