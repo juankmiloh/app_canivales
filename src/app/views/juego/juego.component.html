@@ -3,35 +3,32 @@
         <h3 mat-dialog-title><b>{{ decisiones[decisionSelect].titulo }}</b></h3>
     </div>
     <div class="col-5" style="border: 0px solid red; text-align: right;">
-        <h3 mat-dialog-title><span *ngIf="horas < 10">0</span>{{horas}} : <span *ngIf="minutos < 10">0</span>{{minutos}} : <span *ngIf="segundos < 10">0</span>{{segundos}}</h3>
+        <h3 mat-dialog-title><span *ngIf="horas < 10">0</span>{{horas}} : <span *ngIf="minutos < 10">0</span>{{minutos}}
+            : <span *ngIf="segundos < 10">0</span>{{segundos}}</h3>
     </div>
     <div class="col-2" style="border: 0px solid red; text-align: right;">
         <mat-icon style="cursor: pointer;" color="warn" (click)="closeDialog()">close</mat-icon>
     </div>
 </div>
-<mat-dialog-content style="border: 0px solid red;">
-    <br>
-    <mat-card class="example-card">
-        <img mat-card-image [src]="decisiones[decisionSelect].imagen"  style="height: 200px;">
+<mat-dialog-content style="border: 0px solid blue;">
+    <mat-card class="example-card" style="border: 0px solid green;">
+        <div style="border: 0px solid red; text-align: center;">
+            <img mat-card-image [src]="decisiones[decisionSelect].imagen" class="img-decision">
+        </div>
         <mat-card-content *ngIf="decisiones[decisionSelect].descripcion">
             <p style="text-align: center;">
                 {{ decisiones[decisionSelect].descripcion }}
             </p>
         </mat-card-content>
-        
+
         <mat-divider></mat-divider>
 
         <!-- Vista de dispositivo móvil -->
         <div class="row vista-movil">
             <div *ngFor="let item of decisiones[decisionSelect].opciones;">
-                <div class="example-ripple-container"
-                    matRipple
-                    [matRippleCentered]="centered"
-                    [matRippleDisabled]="disabled"
-                    [matRippleUnbounded]="unbounded"
-                    [matRippleRadius]="radius"
-                    [matRippleColor]="color"
-                    (click)="validarOpcion(item.opcion)">
+                <div class="example-ripple-container" matRipple [matRippleCentered]="centered"
+                    [matRippleDisabled]="disabled" [matRippleUnbounded]="unbounded" [matRippleRadius]="radius"
+                    [matRippleColor]="color" (click)="validarOpcion(item.opcion)">
                     <p style="font-weight: 500;">{{ item.opcion }}</p>
                 </div>
                 <mat-divider></mat-divider>

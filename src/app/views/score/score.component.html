@@ -26,7 +26,7 @@
                     <div mat-line>{{score.name}}</div>
                     <div mat-line><div style="display: flex; align-items: center; padding-top: 1.5%; font-size: small">
                         <mat-icon mat-list-icon style="font-size: large;">timer</mat-icon><span *ngIf="score.hour < 10">0</span>{{ score.hour }}h&nbsp;<span *ngIf="score.minute < 10">0</span>{{ score.minute }}m&nbsp;<span *ngIf="score.second < 10">0</span>{{ score.second }}s</div>
-                        <span style="font-size: x-small;">Registro realizado. {{ score.timestamp |  date:'dd/MM/yyyy' }}</span>
+                        <span style="font-size: x-small;">Registro. {{ score.timestamp | convertDate}}</span>
                     </div>
                 </div>
             </div>

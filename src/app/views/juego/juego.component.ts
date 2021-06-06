@@ -63,7 +63,8 @@ export class JuegoComponent implements OnInit {
       if (opc === 'Guardar') {
         // console.log('Has ganado!');
         const jugador = sessionStorage.getItem('jugador');
-        const model = { name: jugador, hour: this.horas, minute: this.minutos, second: this.segundos };
+        const celular = sessionStorage.getItem('cellphone');
+        const model = { name: jugador, hour: this.horas, minute: this.minutos, second: this.segundos, cellphone: celular };
         this.scoresService.setScores(model);
         this.dialogRef.close();
         this.openSnackBar(`${jugador} se ha guardado tu score exitosamente!`, null);

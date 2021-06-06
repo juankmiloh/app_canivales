@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   x: any;
   bottomSheetRef: any; // modal acerca de
   jugador = '';
+  cellphone: any;
 
   constructor(
     public dialog: MatDialog,
@@ -49,7 +50,7 @@ export class HomeComponent implements OnInit {
   openDialogUser(): void {
     const dialogRef = this.dialog.open(UsuariosComponent, {
       closeOnNavigation: false,
-      maxWidth: this.x.matches ? '90%' : '20%',
+      maxWidth: this.x.matches ? '90%' : '18%',
       // height: this.x.matches ? '100%' : '',
       disableClose: false,
       data: {},
@@ -57,10 +58,12 @@ export class HomeComponent implements OnInit {
 
     // subscribe to observable que se ejecuta despues de cerrar el modal de usuario, obtiene los valores del hijo
     dialogRef.afterClosed().subscribe((dataFromModal) => {
-      // console.log('The dialog was closed', dataFromModal);
+      console.log('The dialog was closed', dataFromModal);
       if (dataFromModal !== undefined) {
         this.jugador = dataFromModal.user;
+        this.cellphone = dataFromModal.cellphone;
         sessionStorage.setItem('jugador', this.jugador);
+        sessionStorage.setItem('cellphone', this.cellphone);
       }
     });
   }

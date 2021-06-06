@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
@@ -9,23 +9,21 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class UsuariosComponent implements OnInit {
 
-  model: FormGroup;
+  model = new FormGroup({
+    user: new FormControl('', [Validators.required]),
+    cellphone: new FormControl('', [Validators.required, Validators.minLength(10), Validators.pattern('[0-9]*')])
+  });
 
   constructor(
-    private formBuilder: FormBuilder,
     private dialogRef: MatDialogRef<UsuariosComponent>
   ) { }
 
-  ngOnInit(): void {
-    this.model = this.formBuilder.group({
-      user: [null, Validators.required],
-    });
-  }
+  ngOnInit(): void { }
 
   logForm() {
     // console.log(this.model.get('user').value);
+    console.log(this.model);
     if (this.model.status) {
-      // console.log(this.model.value);
       this.dialogRef.close(this.model.value); // cerrar modal y pasar datos a la vista padre
     }
   }

@@ -22,7 +22,7 @@
 
     .card-menu {
         /* padding: 6.3% 6% 0% 13%; */
-        padding: 8% 6% 0% 13%;
+        padding: 4.5% 6% 0% 13%;
     }
 
     .card-personajes {
@@ -31,6 +31,17 @@
 
     .img-personajes {
         width: 100%;
+    }
+
+    .title-top {
+        color: #ffff00;
+        text-align: center;
+        border: 0px solid;
+        padding-bottom: 3%;
+    }
+
+    .title-text {
+        font-size: xxx-large;
     }
 }
 
@@ -50,5 +61,16 @@
 
     .img-personajes {
         width: 100%;
+    }
+
+    .title-top {
+        color: #ffff00;
+        text-align: center;
+        border: 0px solid;
+        padding-bottom: 2%;
+    }
+
+    .title-text {
+        font-size: xx-large;
     }
 }
