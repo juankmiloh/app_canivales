@@ -356,7 +356,7 @@ export const modelDecisiones = {
                 opcion: 'Regresan a su celda '
             }
         ],
-        respuesta: 'Lo asesinan y siguen el plan',
+        respuesta: 'Lo asesinan y continuan su escape',
         siguienteDecision: 'decision18',
         tipoDecision: 'En curso',
         progreso: 96
@@ -441,10 +441,30 @@ export const modelDecisiones = {
                 opcion: 'Matarla y seguir el camino'
             }
         ],
-        respuesta:  'El hombre que sabe de subervivencia idea un lazo para sacarla',
+        respuesta:  'El hombre que sabe de subervivencia idear un lazo para sacarla',
         respuesta2:  'Matarla y seguir el camino',
         siguienteDecision: 'decision22',
         siguienteDecision2: 'decision23',
+        tipoDecision: 'En curso',
+        progreso: 96
+    },
+
+
+
+    decision22: {
+        titulo: 'Decisión 6',
+        imagen: '/assets/decision6_alternativa2.png',
+        descripcion: 'Hacen mucho ruido al sacar a la mujer de hueco y son descubiertos por un miembro de la tribu. que deben hacer? ',
+        opciones: [
+            {
+                opcion: 'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu'
+            },
+            {
+                opcion: 'Tratar de huir lo mar  rapido posible'
+            }
+        ],
+        respuesta:  'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu',
+        siguienteDecision: 'decision13',
         tipoDecision: 'En curso',
         progreso: 96
     },
@@ -468,23 +488,6 @@ export const modelDecisiones = {
         progreso: 99
     },
 
-    decision22: {
-        titulo: 'Decisión 6',
-        imagen: '/assets/decision6_alternativa2.png',
-        descripcion: 'Hacen mucho ruido al sacar a la mujer de hueco y son descubiertos por un miembro de la tribu. que deben hacer? ',
-        opciones: [
-            {
-                opcion: 'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu'
-            },
-            {
-                opcion: 'Tratar de huir lo mar  rapido posible'
-            }
-        ],
-        respuesta:  'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu',
-        siguienteDecision: 'decision13',
-        tipoDecision: 'En curso',
-        progreso: 96
-    },
 
 
 
