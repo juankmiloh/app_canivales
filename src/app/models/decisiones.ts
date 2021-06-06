@@ -359,7 +359,7 @@ export const modelDecisiones = {
         respuesta: 'Lo asesinan y continuan su escape',
         siguienteDecision: 'decision18',
         tipoDecision: 'En curso',
-        progreso: 96
+        progreso: 20
     },
 
     
@@ -381,7 +381,7 @@ export const modelDecisiones = {
         respuesta: 'Dejarlo a la entrada de la celda con una nota , escrita por el hombre que sabe el idioma de la tribu',
         siguienteDecision: 'decision19',
         tipoDecision: 'En curso',
-        progreso: 96
+        progreso: 40
     },
 
  
@@ -403,7 +403,7 @@ export const modelDecisiones = {
         respuesta: 'Una amenaza para que no intenten seguirlos y le rocian Quipitos como prueba de su arma',
         siguienteDecision: 'decision20',
         tipoDecision: 'En curso',
-        progreso: 96
+        progreso: 60
     },
     
     decision20: {
@@ -424,7 +424,7 @@ export const modelDecisiones = {
         respuesta:  'Continuar avanzando  en direccion opuesta a la tribu',
         siguienteDecision: 'decision21',
         tipoDecision: 'En curso',
-        progreso: 96
+        progreso: 70
     },
 
     
@@ -446,7 +446,7 @@ export const modelDecisiones = {
         siguienteDecision: 'decision22',
         siguienteDecision2: 'decision23',
         tipoDecision: 'En curso',
-        progreso: 96
+        progreso: 77
     },
 
 
@@ -466,7 +466,7 @@ export const modelDecisiones = {
         respuesta:  'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu',
         siguienteDecision: 'decision13',
         tipoDecision: 'En curso',
-        progreso: 96
+        progreso: 78
     },
 
     decision23: {
