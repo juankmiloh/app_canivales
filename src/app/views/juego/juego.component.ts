@@ -21,9 +21,9 @@ export class JuegoComponent implements OnInit {
   centered = false;
   disabled = false;
   unbounded = false;
-
   radius: number;
   color: string;
+  listaDecisiones: any[];
 
   constructor(
     public dialogRef: MatDialogRef<JuegoComponent>,
@@ -33,6 +33,7 @@ export class JuegoComponent implements OnInit {
 
   ngOnInit(): void {
     this.startTimer();
+    this.listaDecisiones = this.random_elems(this.decisiones[this.decisionSelect].opciones, 3);
   }
 
   startTimer() {
@@ -70,15 +71,15 @@ export class JuegoComponent implements OnInit {
         this.openSnackBar(`${jugador} se ha guardado tu score exitosamente!`, null);
       } else {
         if (opc === this.decisiones[this.decisionSelect].respuesta2) {
-
           this.decisionSelect = this.decisiones[this.decisionSelect].siguienteDecision2;
-
         } else {
           this.decisionSelect = this.decisiones[this.decisionSelect].siguienteDecision;
         }
+        this.listaDecisiones = this.random_elems(this.decisiones[this.decisionSelect].opciones, 3);
       }
     } else {
       this.decisionSelect = 'decisionMuerte';
+      this.listaDecisiones = this.decisiones[this.decisionSelect].opciones;
     }
   }
 
@@ -92,6 +93,28 @@ export class JuegoComponent implements OnInit {
 
   closeDialog() {
     this.dialogRef.close();
+  }
+
+  // Funcion para ordenar aleatoriamente el array de decisiones
+  random_elems(arr: string | any[], count: number) {
+    const len = arr.length;
+    const lookup = {};
+    const tmp = [];
+
+    if (count > len) {
+      count = len;
+    }
+
+    for (let i = 0; i < count; i++) {
+      let index: string | number;
+      do {
+        // tslint:disable-next-line: no-bitwise
+        index = ~~(Math.random() * len);
+      } while (index in lookup);
+      lookup[index] = null;
+      tmp.push(arr[index]);
+    }
+    return tmp;
   }
 
 }
