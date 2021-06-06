@@ -23,8 +23,8 @@ export class VideoComponent implements OnInit {
   // mostrar modal de opciones
   openDialog(): void {
     const dialogRef = this.dialog.open(JuegoComponent, {
-      maxWidth: this.x.matches ? '90%' : '40%',
-      // height: this.x.matches ? '' : '',
+      maxWidth: this.x.matches ? '90%' : '50%',
+      // height: this.x.matches ? '100%' : '',
       disableClose: true,
       data: {},
     });

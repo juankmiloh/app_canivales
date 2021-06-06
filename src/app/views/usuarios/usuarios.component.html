@@ -1,13 +1,21 @@
 <mat-dialog-content>
     <form [formGroup]="model" (ngSubmit)="logForm()">
         <div class="row">
-            <div class="col-sm-12 col-md-12 card-menu"
-                style="border: 0px solid red; text-align: center; padding-top: 5%; padding-bottom: 5%;">
-                <mat-form-field appearance="outline">
+            <div class="col-sm-12 col-md-12 card-menu" style="border: 0px solid red; text-align: center; padding-top: 5%; padding-bottom: 5%;">
+                <mat-form-field appearance="outline" style="border: 0px solid red; width: 100%;">
                     <mat-label>Bienvenido</mat-label>
                     <input matInput formControlName="user" placeholder="Ingresa tu nombre">
                     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                     <mat-hint class="text-danger" *ngIf="model.controls.user.invalid && model.controls.user.touched">*Campo obligatorio</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline" *ngIf="!model.controls.user.invalid" style="border: 0px solid red; width: 100%;">
+                    <mat-label>Celular</mat-label>
+                    <input matInput #input maxlength="10" formControlName="cellphone" class="example-right-align" [placeholder]="model.value.user + ' ingresa tu celular'">
+                    <mat-icon matSuffix>phone_android</mat-icon>
+                    <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+                    <mat-hint class="text-danger" *ngIf="model.controls.cellphone.invalid && model.controls.cellphone.touched">*Campo obligatorio</mat-hint>
+                    <mat-error *ngIf="model.controls['cellphone'].hasError('minlength')">*Ingrese mínimo 10 números</mat-error>
+                    <mat-error *ngIf="model.controls['cellphone'].hasError('pattern')">*Ingrese solo números</mat-error>
                 </mat-form-field>
             </div>
             <mat-divider></mat-divider>

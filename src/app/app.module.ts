@@ -30,6 +30,7 @@ import { JuegoComponent } from './views/juego/juego.component';
 import { VideoComponent } from './views/video/video.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ConvertDatePipe } from './pipes/convert-date.pipe';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     UsuariosComponent,
     ScoreComponent,
     JuegoComponent,
-    VideoComponent
+    VideoComponent,
+    ConvertDatePipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

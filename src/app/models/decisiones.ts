@@ -1,33 +1,29 @@
 export const modelDecisiones = {
     decision0: {
         titulo: 'Decision 0',
-        imagen: '/assets/amanecer.jfif',
-        descripcion: 'Los personajes se encuentran prisioneros, ¿Cuá es el  mejor momento para huir?',
+        imagen: '/assets/decision0.jpg',
+        descripcion: '¿Cuá es el  mejor momento para huir?',
         opciones: [
             {
-                opcion: 'El la tarde, ya que la mujer tiene problemas de visión'
+                opcion: 'En la tarde, ya que la mujer tiene problemas de visión'
             },
             {
-                opcion: 'En la noche,  dado que hombre que sabe de supervivencia es obeso'
+                opcion: 'En la noche, dado que el hombre que sabe de supervivencia es obeso'
             },
             {
-                opcion: 'Al amanecer, dado que es hay una luz tenue  y los canibales se encuentran en su nivel mas profundo de sueño'
+                opcion: 'Al amanecer, dado que hay luz tenue y los canibales se encuentran en su nivel mas profundo de sueño'
             }
         ],
-        respuesta: 'Al amanecer, dado que es hay una luz tenue  y los canibales se encuentran en su nivel mas profundo de sueño',
-        respuesta2: 'En la noche,  dado que hombre que sabe de supervivencia es obeso',
-        siguienteDecision:  'decision1',
-        siguienteDecision2:  'decision16',
+        respuesta: 'Al amanecer, dado que hay luz tenue y los canibales se encuentran en su nivel mas profundo de sueño',
+        respuesta2: 'En la noche, dado que el hombre que sabe de supervivencia es obeso',
+        siguienteDecision: 'decision1',
+        siguienteDecision2: 'decision17',
         tipoDecision: 'En curso',
         progreso: 6
     },
-
-
-
-
     decision1: {
         titulo: 'Decisión 1',
-        imagen: '/assets/prisioneros.png',
+        imagen: '/assets/decision1.jpg',
         descripcion: 'Los personajes se encuentran prisioneros, ¿Desea abrir la puerta?',
         opciones: [
             {
@@ -44,7 +40,7 @@ export const modelDecisiones = {
     },
     decision2: {
         titulo: 'Decisión 2',
-        imagen: '/assets/herramienta.png',
+        imagen: '/assets/decision2.png',
         descripcion: 'Seleccione una herramienta para abrir la puerta',
         opciones: [
             {
@@ -64,7 +60,7 @@ export const modelDecisiones = {
     },
     decision3: {
         titulo: 'Decisión 3',
-        imagen: '/assets/decision3.png',
+        imagen: '/assets/decision3.jpg',
         descripcion: 'Los personajes están libres, ¿Qué deberían hacer?',
         opciones: [
             {
@@ -84,7 +80,7 @@ export const modelDecisiones = {
     },
     decision4: {
         titulo: 'Decisión 4',
-        imagen: '/assets/decision5.png',
+        imagen: '/assets/decision4.jpg',
         descripcion: 'Al momento de realizar el plan, el hombre que conoce la zona decide...',
         opciones: [
             {
@@ -104,7 +100,7 @@ export const modelDecisiones = {
     },
     decision5: {
         titulo: 'Decisión 5',
-        imagen: '/assets/decision4.png',
+        imagen: '/assets/decision5.jpg',
         descripcion: 'Con el mapa de la región, ¿Qué deberían hacer?',
         opciones: [
             {
@@ -124,7 +120,7 @@ export const modelDecisiones = {
     },
     decision6: {
         titulo: 'Decisión 6',
-        imagen: '/assets/decision6.png',
+        imagen: '/assets/decision6.jpg',
         descripcion: '¿Qué deberían tener en cuenta al conocer la ruta de escape?',
         opciones: [
             {
@@ -164,8 +160,8 @@ export const modelDecisiones = {
     },
     decision8: {
         titulo: 'Decisión 8',
-        imagen: '/assets/decision8.png',
-        descripcion: 'Si aún quedan algunos caníbales despiertos y muchos otros haciendo guardía, ellos deberían...',
+        imagen: '/assets/decision8.jpg',
+        descripcion: 'Aún quedan algunos caníbales despiertos y muchos otros haciendo guardía, ellos deberían...',
         opciones: [
             {
                 opcion: 'Planear una estrategía para engañarlos'
@@ -184,7 +180,7 @@ export const modelDecisiones = {
     },
     decision9: {
         titulo: 'Decisión 9',
-        imagen: '/assets/decision9.png',
+        imagen: '/assets/decision9.jpg',
         descripcion: 'Dentro de la estrategia se acercan al cadaver del guía y deciden...',
         opciones: [
             {
@@ -204,7 +200,7 @@ export const modelDecisiones = {
     },
     decision10: {
         titulo: 'Decisión 10',
-        imagen: '/assets/decision10.png',
+        imagen: '/assets/decision10.jpg',
         descripcion: 'Dentro de la estrategia de engaño, ¿Cuál sería el siguiente paso?',
         opciones: [
             {
@@ -222,10 +218,10 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 66
     },
-    
+
     decision11: {
         titulo: 'Decisión 11',
-        imagen: '/assets/decision11_1.png',
+        imagen: '/assets/decision11.jpg',
         descripcion: 'Los caníbales se ven sorprendidos por los Quipitos pensando que están envenenados, el siguiente paso es:',
         opciones: [
             {
@@ -252,7 +248,7 @@ export const modelDecisiones = {
                 opcion: 'Se dirigen a un punto de encuentro previamente acordado al revisar el mapa de la region'
             },
             {
-                opcion: 'Se dirigen a buscar la cura del envenenamiento' 
+                opcion: 'Se dirigen a buscar la cura del envenenamiento'
             },
             {
                 opcion: 'Se van corriendo en circulos'
@@ -263,16 +259,16 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 78
     },
-        decision13: {
+    decision13: {
         titulo: 'Decisión 13',
-        imagen: '/assets/decision13.jpg',
-        descripcion: 'Mientras tanto el hombre que sabe supervivencia y el hombre que conoce la zona son encerrados de nuevo, ¿cual sera la nueva estrategia de escape? ',
+        imagen: '/assets/decision13.png',
+        descripcion: 'Mientras tanto el hombre que sabe supervivencia y el hombre que conoce la zona son encerrados de nuevo, ¿cual sera la nueva estrategia de escape?',
         opciones: [
             {
                 opcion: 'Convertirse en amigos de la tribu para que les de comida '
             },
             {
-                opcion: 'Esperar a que regresen los compañeros ' 
+                opcion: 'Esperar a que regresen los compañeros '
             },
             {
                 opcion: 'Esperar que caiga la noche y proyectar sombras con una linterna y disuadir a la tribu'
@@ -292,18 +288,18 @@ export const modelDecisiones = {
                 opcion: 'Salir de la jaula y comer un poco'
             },
             {
-                opcion: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu ' 
+                opcion: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu'
             },
             {
                 opcion: 'Esperar a que regresen los compañeros'
             }
         ],
-        respuesta: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu ',
+        respuesta: 'Abrir la puerta de nuevo con la cuchara y correr en direccion opuesta donde esta la tribu',
         siguienteDecision: 'decision15',
         tipoDecision: 'En curso',
         progreso: 90
     },
-        decision15: {
+    decision15: {
         titulo: 'Decisión 15',
         imagen: '/assets/decision15.jpg',
         descripcion: 'Los hombres han logrado escapar hacia donde se dirigen',
@@ -312,7 +308,7 @@ export const modelDecisiones = {
                 opcion: 'Se dirigen al punto de encuentro con los otros compañeros'
             },
             {
-                opcion: 'Al infinito y mas alla' 
+                opcion: 'Al infinito y mas alla'
             },
             {
                 opcion: 'Volveran a la jaula '
@@ -323,7 +319,7 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 96
     },
-        decision16: {
+    decision16: {
         titulo: 'Decisión 16',
         imagen: '/assets/decision16.jpg',
         descripcion: 'Los hombres estan cerca del punto de encuentro pero alcanzan a ver que a sus compañeros aun los acompaña el miembro de la tribu ¿Como lograran escapar?',
@@ -332,7 +328,7 @@ export const modelDecisiones = {
                 opcion: 'Huyendo únicamente ellos 2'
             },
             {
-                opcion: 'Sobornando al hombre de la tribu' 
+                opcion: 'Sobornando al hombre de la tribu'
             },
             {
                 opcion: 'Asesinando al hombre de la tribu y siguiendo el plan de escape'
@@ -343,6 +339,156 @@ export const modelDecisiones = {
         tipoDecision: 'Final',
         progreso: 99
     },
+
+
+    decision17: {
+        titulo: 'Decisión 1',
+        imagen: '/assets/decision1_alternativa.png',
+        descripcion: 'Es de noche y despues de abrir la puerta de la celda un guardia los descubre que deben hacer ? ',
+        opciones: [
+            {
+                opcion: 'Lo asesinan y continuan su escape'
+            },
+            {
+                opcion: 'El hombre que sabe el lenguaje se pone a hablar con el mientras los demas escapan'
+            },
+            {
+                opcion: 'Regresan a su celda '
+            }
+        ],
+        respuesta: 'Lo asesinan y siguen el plan',
+        siguienteDecision: 'decision18',
+        tipoDecision: 'En curso',
+        progreso: 96
+    },
+
+    
+    decision18: {
+        titulo: 'Decisión 2',
+        imagen: '/assets/decision2_alternativa.png',
+        descripcion: 'Para continuar su escape  que crees que deberia hacer con el cuerpo del guardia ? ',
+        opciones: [
+            {
+                opcion: 'Enterrarlo con Dios manda'
+            },
+            {
+                opcion: 'Dejarlo a la entrada de la celda con una nota , escrita por el hombre que sabe el idioma de la tribu'
+            },
+            {
+                opcion: 'La mujer que sabe medicina , decide hacerle una pequeña curación'
+            }
+        ],
+        respuesta: 'Dejarlo a la entrada de la celda con una nota , escrita por el hombre que sabe el idioma de la tribu',
+        siguienteDecision: 'decision19',
+        tipoDecision: 'En curso',
+        progreso: 96
+    },
+
+ 
+    decision19: {
+        titulo: 'Decisión 3',
+        imagen: '/assets/decision3_alternativa.png',
+        descripcion: 'Que nota crees qeu deberian dejarle? ',
+        opciones: [
+            {
+                opcion: 'Una oración'
+            },
+            {
+                opcion: 'Unas disculpas lementando el hecho'
+            },
+            {
+                opcion: 'Una amenaza para que no intenten seguirlos y le rocian Quipitos como prueba de su arma'
+            }
+        ],
+        respuesta: 'Una amenaza para que no intenten seguirlos y le rocian Quipitos como prueba de su arma',
+        siguienteDecision: 'decision20',
+        tipoDecision: 'En curso',
+        progreso: 96
+    },
+    
+    decision20: {
+        titulo: 'Decisión 4',
+        imagen: '/assets/decision4_alternativa.png',
+        descripcion: 'Estan  a punto de salir de area de los canibales y el hombre que conoce la zona ,sufre un episodio de Alzhéimer, que deben hacer? ',
+        opciones: [
+            {
+                opcion: 'Sentarse a esperar que se le pase'
+            },
+            {
+                opcion: 'Regresar y preguntar la salida'
+            },
+            {
+                opcion: 'Continuar avanzando  en direccion opuesta a la tribu'
+            }
+        ],
+        respuesta:  'Continuar avanzando  en direccion opuesta a la tribu',
+        siguienteDecision: 'decision21',
+        tipoDecision: 'En curso',
+        progreso: 96
+    },
+
+    
+    decision21: {
+        titulo: 'Decisión 5',
+        imagen: '/assets/decision5_alternativa.png',
+        descripcion: 'La mujer, que tiene poca vision , cae en un hueco que  deberian hacer ',
+        opciones: [
+         
+            {
+                opcion: 'El hombre que sabe de subervivencia idear un lazo para sacarla'
+            },
+            {
+                opcion: 'Matarla y seguir el camino'
+            }
+        ],
+        respuesta:  'El hombre que sabe de subervivencia idea un lazo para sacarla',
+        respuesta2:  'Matarla y seguir el camino',
+        siguienteDecision: 'decision22',
+        siguienteDecision2: 'decision23',
+        tipoDecision: 'En curso',
+        progreso: 96
+    },
+
+    decision23: {
+        titulo: 'Decisión 6',
+        imagen: '/assets/decision6_alternativa.png',
+        descripcion: 'Despues de matar a la mujer para evitar que se quedara gritando .  Que deben hacer',
+        opciones: [
+            {
+                opcion: ' Llorar y culparse por lo sucedido'
+            },
+            {
+                opcion: 'Rociarle  el  resto de quipitos como continuacion de la amenaza y  seguir su camino'
+            }
+         
+        ],
+        respuesta: 'Rociarle  el  resto de quipitos como continuacion de la amenaza y  seguir su camino',
+        siguienteDecision: 'decisionBuena',
+        tipoDecision: 'Final',
+        progreso: 99
+    },
+
+    decision22: {
+        titulo: 'Decisión 6',
+        imagen: '/assets/decision6_alternativa2.png',
+        descripcion: 'Hacen mucho ruido al sacar a la mujer de hueco y son descubiertos por un miembro de la tribu. que deben hacer? ',
+        opciones: [
+            {
+                opcion: 'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu'
+            },
+            {
+                opcion: 'Tratar de huir lo mar  rapido posible'
+            }
+        ],
+        respuesta:  'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu',
+        siguienteDecision: 'decision13',
+        tipoDecision: 'En curso',
+        progreso: 96
+    },
+
+
+
+
     decisionBuena: {
         titulo: 'Felicitaciones, sobreviviste!!!',
         imagen: '/assets/ganador.jpg',

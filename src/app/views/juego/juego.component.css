@@ -38,6 +38,11 @@
     .vista-movil {
         display: none;
     }
+
+    .img-decision {
+        /* height: 50%; */
+        /* width: 100%; */
+    }
 }
 
 /* Pantallas inferiores a 800px (mobile) */
