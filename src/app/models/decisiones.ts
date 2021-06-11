@@ -388,13 +388,13 @@ export const modelDecisiones = {
     decision19: {
         titulo: 'Decisión 3',
         imagen: '/assets/decision3_alternativa.png',
-        descripcion: 'Que nota crees qeu deberian dejarle? ',
+        descripcion: 'Que nota crees que deberian dejarle? ',
         opciones: [
             {
                 opcion: 'Una oración'
             },
             {
-                opcion: 'Unas disculpas lementando el hecho'
+                opcion: 'Unas disculpas lamentando el hecho'
             },
             {
                 opcion: 'Una amenaza para que no intenten seguirlos y le rocian Quipitos como prueba de su arma'
