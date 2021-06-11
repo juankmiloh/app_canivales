@@ -1,8 +1,8 @@
 export const modelDecisiones = {
     decision0: {
-        titulo: 'Decision 0',
+        titulo: 'Decisión 0',
         imagen: '/assets/decision0.jpg',
-        descripcion: '¿Cuá es el  mejor momento para huir?',
+        descripcion: '¿Cuá es el mejor momento para huir?',
         opciones: [
             {
                 opcion: 'En la tarde, ya que la mujer tiene problemas de visión'
@@ -164,7 +164,7 @@ export const modelDecisiones = {
         descripcion: 'Aún quedan algunos caníbales despiertos y muchos otros haciendo guardía, ellos deberían...',
         opciones: [
             {
-                opcion: 'Planear una estrategía para engañarlos'
+                opcion: 'Planear una estrategia para engañarlos'
             },
             {
                 opcion: 'Jugar ajedrez con ellos'
@@ -173,7 +173,7 @@ export const modelDecisiones = {
                 opcion: 'Tener una charla cálida y amable con ellos'
             }
         ],
-        respuesta: 'Planear una estrategía para engañarlos',
+        respuesta: 'Planear una estrategia para engañarlos',
         siguienteDecision: 'decision9',
         tipoDecision: 'En curso',
         progreso: 54
@@ -218,7 +218,6 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 66
     },
-
     decision11: {
         titulo: 'Decisión 11',
         imagen: '/assets/decision11.jpg',
@@ -251,7 +250,7 @@ export const modelDecisiones = {
                 opcion: 'Se dirigen a buscar la cura del envenenamiento'
             },
             {
-                opcion: 'Se van corriendo en circulos'
+                opcion: 'Se van corriendo en círculos'
             }
         ],
         respuesta: 'Se dirigen a un punto de encuentro previamente acordado al revisar el mapa de la region',
@@ -282,7 +281,7 @@ export const modelDecisiones = {
     decision14: {
         titulo: 'Decisión 14',
         imagen: '/assets/decision14.jpg',
-        descripcion: 'La tribu vio las sombras y salio del refugio a revisar con quien se encontraba , ¿cual es el siguiente paso de los capturados?',
+        descripcion: 'La tribu vio las sombras y salio del refugio a revisar con quien se encontraba, ¿cuál es el siguiente paso de los capturados?',
         opciones: [
             {
                 opcion: 'Salir de la jaula y comer un poco'
@@ -308,10 +307,10 @@ export const modelDecisiones = {
                 opcion: 'Se dirigen al punto de encuentro con los otros compañeros'
             },
             {
-                opcion: 'Al infinito y mas alla'
+                opcion: 'Al infinito y mas allá'
             },
             {
-                opcion: 'Volveran a la jaula '
+                opcion: 'Volverán a la jaula '
             }
         ],
         respuesta: 'Se dirigen al punto de encuentro con los otros compañeros',
@@ -322,7 +321,7 @@ export const modelDecisiones = {
     decision16: {
         titulo: 'Decisión 16',
         imagen: '/assets/decision16.jpg',
-        descripcion: 'Los hombres estan cerca del punto de encuentro pero alcanzan a ver que a sus compañeros aun los acompaña el miembro de la tribu ¿Como lograran escapar?',
+        descripcion: 'Los hombres estan cerca del punto de encuentro, pero alcanzan a ver que a sus compañeros aun los acompaña el miembro de la tribu ¿Como lograran escapar?',
         opciones: [
             {
                 opcion: 'Huyendo únicamente ellos 2'
@@ -339,15 +338,13 @@ export const modelDecisiones = {
         tipoDecision: 'Final',
         progreso: 99
     },
-
-
     decision17: {
         titulo: 'Decisión 1',
         imagen: '/assets/decision1_alternativa.png',
-        descripcion: 'Es de noche y despues de abrir la puerta de la celda un guardia los descubre que deben hacer ? ',
+        descripcion: 'Es de noche y despues de abrir la puerta de la celda un guardia los descubre que deben hacer?',
         opciones: [
             {
-                opcion: 'Lo asesinan y continuan su escape'
+                opcion: 'Lo asesinan y continúan su escape'
             },
             {
                 opcion: 'El hombre que sabe el lenguaje se pone a hablar con el mientras los demas escapan'
@@ -356,45 +353,41 @@ export const modelDecisiones = {
                 opcion: 'Regresan a su celda '
             }
         ],
-        respuesta: 'Lo asesinan y continuan su escape',
+        respuesta: 'Lo asesinan y continúan su escape',
         siguienteDecision: 'decision18',
         tipoDecision: 'En curso',
         progreso: 20
     },
-
-    
     decision18: {
         titulo: 'Decisión 2',
         imagen: '/assets/decision2_alternativa.png',
-        descripcion: 'Para continuar su escape  que crees que deberia hacer con el cuerpo del guardia ? ',
+        descripcion: 'Para continuar su escape que crees que debería hacer con el cuerpo del guardia?',
         opciones: [
             {
-                opcion: 'Enterrarlo con Dios manda'
+                opcion: 'Enterrarlo como Dios manda'
             },
             {
-                opcion: 'Dejarlo a la entrada de la celda con una nota , escrita por el hombre que sabe el idioma de la tribu'
+                opcion: 'Dejarlo a la entrada de la celda con una nota, escrita por el hombre que sabe el idioma de la tribu'
             },
             {
-                opcion: 'La mujer que sabe medicina , decide hacerle una pequeña curación'
+                opcion: 'La mujer que sabe medicina, decide hacerle una pequeña curación'
             }
         ],
-        respuesta: 'Dejarlo a la entrada de la celda con una nota , escrita por el hombre que sabe el idioma de la tribu',
+        respuesta: 'Dejarlo a la entrada de la celda con una nota, escrita por el hombre que sabe el idioma de la tribu',
         siguienteDecision: 'decision19',
         tipoDecision: 'En curso',
         progreso: 40
     },
-
- 
     decision19: {
         titulo: 'Decisión 3',
         imagen: '/assets/decision3_alternativa.png',
-        descripcion: 'Que nota crees qeu deberian dejarle? ',
+        descripcion: 'Que nota crees qué deberían dejarle? ',
         opciones: [
             {
                 opcion: 'Una oración'
             },
             {
-                opcion: 'Unas disculpas lementando el hecho'
+                opcion: 'Unas disculpas lamentando el hecho'
             },
             {
                 opcion: 'Una amenaza para que no intenten seguirlos y le rocian Quipitos como prueba de su arma'
@@ -405,11 +398,10 @@ export const modelDecisiones = {
         tipoDecision: 'En curso',
         progreso: 60
     },
-    
     decision20: {
         titulo: 'Decisión 4',
         imagen: '/assets/decision4_alternativa.png',
-        descripcion: 'Estan  a punto de salir de area de los canibales y el hombre que conoce la zona ,sufre un episodio de Alzhéimer, que deben hacer? ',
+        descripcion: 'Están a punto de salir de area de los canibales y el hombre que conoce la zona, sufre un episodio de Alzhéimer, que deben hacer? ',
         opciones: [
             {
                 opcion: 'Sentarse a esperar que se le pase'
@@ -418,22 +410,20 @@ export const modelDecisiones = {
                 opcion: 'Regresar y preguntar la salida'
             },
             {
-                opcion: 'Continuar avanzando  en direccion opuesta a la tribu'
+                opcion: 'Continuar avanzando en dirección opuesta a la tribu'
             }
         ],
-        respuesta:  'Continuar avanzando  en direccion opuesta a la tribu',
+        respuesta: 'Continuar avanzando en dirección opuesta a la tribu',
         siguienteDecision: 'decision21',
         tipoDecision: 'En curso',
         progreso: 70
     },
-
-    
     decision21: {
         titulo: 'Decisión 5',
         imagen: '/assets/decision5_alternativa.png',
-        descripcion: 'La mujer, que tiene poca vision , cae en un hueco que  deberian hacer ',
+        descripcion: 'La mujer, que tiene poca visión, cae en un hueco que  deberian hacer ',
         opciones: [
-         
+
             {
                 opcion: 'El hombre que sabe de subervivencia idear un lazo para sacarla'
             },
@@ -441,57 +431,48 @@ export const modelDecisiones = {
                 opcion: 'Matarla y seguir el camino'
             }
         ],
-        respuesta:  'El hombre que sabe de subervivencia idear un lazo para sacarla',
-        respuesta2:  'Matarla y seguir el camino',
+        respuesta: 'El hombre que sabe de subervivencia idear un lazo para sacarla',
+        respuesta2: 'Matarla y seguir el camino',
         siguienteDecision: 'decision22',
         siguienteDecision2: 'decision23',
         tipoDecision: 'En curso',
         progreso: 77
     },
-
-
-
     decision22: {
         titulo: 'Decisión 6',
-        imagen: '/assets/decision6_alternativa2.png',
+        imagen: '/assets/decision6_alternativa2.jpg',
         descripcion: 'Hacen mucho ruido al sacar a la mujer de hueco y son descubiertos por un miembro de la tribu. que deben hacer? ',
         opciones: [
             {
                 opcion: 'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu'
             },
             {
-                opcion: 'Tratar de huir lo mar  rapido posible'
+                opcion: 'Tratar de huir lo mar rápido posible'
             }
         ],
-        respuesta:  'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu',
+        respuesta: 'La mujer con sus encantos y el hombre que sabe la lengua tratar de persuadir al miembro de la tribu',
         siguienteDecision: 'decision13',
         tipoDecision: 'En curso',
         progreso: 78
     },
-
     decision23: {
         titulo: 'Decisión 6',
-        imagen: '/assets/decision6_alternativa.png',
+        imagen: '/assets/decision6_alternativa.jpg',
         descripcion: 'Despues de matar a la mujer para evitar que se quedara gritando .  Que deben hacer',
         opciones: [
             {
                 opcion: ' Llorar y culparse por lo sucedido'
             },
             {
-                opcion: 'Rociarle  el  resto de quipitos como continuacion de la amenaza y  seguir su camino'
+                opcion: 'Rociarle el resto de quipitos como continuacion de la amenaza y seguir su camino'
             }
-         
+
         ],
-        respuesta: 'Rociarle  el  resto de quipitos como continuacion de la amenaza y  seguir su camino',
+        respuesta: 'Rociarle el resto de quipitos como continuacion de la amenaza y seguir su camino',
         siguienteDecision: 'decisionBuena',
         tipoDecision: 'Final',
         progreso: 99
     },
-
-
-
-
-
     decisionBuena: {
         titulo: 'Felicitaciones, sobreviviste!!!',
         imagen: '/assets/ganador.jpg',
